@@ -1,0 +1,294 @@
+.ingredients {
+    background-color: #91DFB9;
+    padding: 7rem 5rem;
+}
+
+.ingredients .left h2 {
+    font-weight: 700;
+    font-size: 45px;
+    color: #005099;
+    margin-bottom: 30px;
+}
+
+.ingredients .left p {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 34px;
+    color: #005099;
+    margin-bottom: 30px !important;
+}
+
+.ingredients .left a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    color: #005099;
+    position: relative;
+    transition: .3s;
+}
+
+.ingredients .left a:hover {
+    color: white;
+    transition: .3s;
+}
+
+.ingredients .left a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    background-color: white;
+    color: white;
+    height: 4px;
+}
+
+.ingredients .right .box {
+    transition: .5s;
+}
+
+.ingredients .right .box img {
+    width: 145px;
+    height: 145px;
+    object-fit: fill;
+    position: relative;
+}
+
+.ingredients .right {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.ingredients .right .plus {
+    border: 1px solid #007367;
+    border-radius: 50px;
+    padding: 5px;
+    background-color: #007367;
+    color: white;
+    transform: rotate(0deg);
+    transition: .3s ease-in-out;
+}
+
+.ingredients .right .x {
+    border: 1px solid #fff;
+    border-radius: 50px;
+    padding: 5px;
+    background-color: #fff;
+    color: #007367;
+    transform: rotate(45deg);
+    transition: .3s ease-in-out;
+}
+
+.ingredients .right i {
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    transition: .2s all ease-in-out;
+    cursor: pointer;
+}
+
+.ingredients .gingerBox {
+    position: relative;
+}
+
+.ingredients .ginger,
+.vanilla {
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    width: 190px;
+    border-radius: 30px;
+    position: absolute;
+    top: 25px;
+    left: 30px;
+    z-index: 1;
+}
+
+.ingredients .ginger,
+.vanilla,
+h5 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #005099;
+}
+
+.ingredients .ginger,
+.vanilla,
+.oats,
+.flaxs,
+.rosemary,
+.cinnamon p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #005099;
+}
+
+.none {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+
+.ingredients .vanillaBox {
+    position: relative;
+}
+
+.ingredients .oatsBox {
+    position: relative;
+}
+
+.ingredients .oats {
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    width: 190px;
+    border-radius: 30px;
+    position: absolute;
+    top: 10px;
+    left: -180px;
+    z-index: 1;
+}
+
+.ingredients .flaxBox {
+    position: relative;
+}
+
+.ingredients .flaxs {
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    width: 190px;
+    border-radius: 30px;
+    position: absolute;
+    top: -160px;
+    left: 20px;
+    z-index: 1;
+}
+
+.ingredients .rosemaryxBox {
+    position: relative;
+}
+
+.ingredients .rosemary {
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    width: 190px;
+    border-radius: 30px;
+    position: absolute;
+    top: -170px;
+    left: 35px;
+    z-index: 1;
+}
+
+.ingredients .cinnamonBox {
+    position: relative;
+}
+
+.ingredients .cinnamon {
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    width: 190px;
+    border-radius: 30px;
+    position: absolute;
+    top: -220px;
+    left: -190px;
+    z-index: 1;
+}
+
+@media(max-width: 576px) {
+    .ingredients .all {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .ingredients .right .box img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .ingredients {
+        padding-right: 0;
+        padding-left: 0;
+        padding: 3rem 0;
+    }
+
+    .ingredients .right {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .ingredients .ginger,
+    .vanilla,
+    h5 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .ingredients .ginger,
+    .vanilla,
+    .oats,
+    .flaxs,
+    .rosemary,
+    .cinnamon p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .ingredients .vanilla {
+        width: 210px;
+        border-radius: 20px;
+        top: 40px;
+        left: -50px;
+    }
+    .ingredients .oats {
+        padding: 5px;
+        width: 210px;
+        border-radius: 20px;
+        top: 20px;
+        left: -200px;
+    }
+    .ingredients .flaxs {
+        padding: 5px;
+        width: 210px;
+        border-radius: 20px;
+        top: -120px;
+    }
+    .ingredients .rosemary {
+        padding: 5px;
+        width: 210px;
+        border-radius: 20px;
+        top: -135px;
+        left: -35px;
+    }
+    .ingredients .cinnamon {
+        padding: 6px;
+        width: 210px;
+        border-radius: 20px;
+        top: -160px;
+        left: -200px;
+    }
+    .ingredients .left{
+        margin-top: 20px;
+    }
+    .ingredients .left h2 {
+        font-size: 28px;
+    }
+    .ingredients .left p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .ingredients .left a {
+        font-size: 15px;
+    }
+    
+}
