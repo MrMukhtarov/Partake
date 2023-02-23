@@ -26,19 +26,19 @@ const Footer = () => {
           <div className="bottom col-lg-12 mt-4">
             <div className="boxes">
             <div className="box">
-              <i class="fa-solid fa-wheat-awn-circle-exclamation"></i>
+              <i className="fa-solid fa-wheat-awn-circle-exclamation"></i>
             </div>
             <div className="box">
-              <i class="fa-solid fa-u"></i>
+              <i className="fa-solid fa-u"></i>
             </div>
             <div className="box">
-              <i class="fa-solid fa-0"></i>
+              <i className="fa-solid fa-0"></i>
             </div>
             <div className="box">
-              <i class="fa-solid fa-seedling"></i>
+              <i className="fa-solid fa-seedling"></i>
             </div>
             <div className="box">
-              <i class="fa-solid fa-b"></i>
+              <i className="fa-solid fa-b"></i>
             </div>
             </div>
             <div className="copyright ms-2">Copyright © 2023 Partake Foods</div>
@@ -47,11 +47,11 @@ const Footer = () => {
         <div className="right col-lg-5">
             <h5>Be in the Know.</h5>
             <div className="icons">
-            <NavLink to='/'><i class="fa-brands fa-twitter"></i></NavLink>
-            <NavLink to='/'><i class="fa-brands fa-facebook"></i></NavLink>
-            <NavLink to='/'><i class="fa-brands fa-pinterest"></i>  </NavLink>
-            <NavLink to='/'><i class="fa-brands fa-instagram"></i></NavLink>
-            <NavLink to='/'><i class="fa-brands fa-tiktok"></i></NavLink>
+            <NavLink to='/'><i className="fa-brands fa-twitter"></i></NavLink>
+            <NavLink to='/'><i className="fa-brands fa-facebook"></i></NavLink>
+            <NavLink to='/'><i className="fa-brands fa-pinterest"></i>  </NavLink>
+            <NavLink to='/'><i className="fa-brands fa-instagram"></i></NavLink>
+            <NavLink to='/'><i className="fa-brands fa-tiktok"></i></NavLink>
             </div>
             <div className="input">
                 <input type="text" placeholder="Email Address"/>

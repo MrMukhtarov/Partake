@@ -19,15 +19,15 @@ const FeaturedImage = () => {
             A portion of proceeds support families living with food insecurity.
           </p>
           <div className="first d-flex align-items-center gap-3 mb-3">
-            <i class="fa-solid fa-hand-holding-heart"></i>
+            <i className="fa-solid fa-hand-holding-heart"></i>
             <p>Generated with Avocode.</p>
           </div>
           <div className="first d-flex align-items-center gap-3 mb-3">
-            <i class="fa-solid fa-utensils"></i>
+            <i className="fa-solid fa-utensils"></i>
             <p className="ms-2">Fighting Food Insecurity</p>
           </div>
           <div className="first d-flex align-items-center gap-3 mb-3">
-            <i class="fa-solid fa-door-open"></i>
+            <i className="fa-solid fa-door-open"></i>
             <p>Creating Opportunities in CPG</p>
           </div>
           <div>

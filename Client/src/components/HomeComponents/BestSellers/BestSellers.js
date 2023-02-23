@@ -41,7 +41,7 @@ const BestSellers = () => {
         <OwlCarousel className="slider-items owl-carousel" {...options}>
           {bestSeller &&
             bestSeller.map((best) => (
-              <div class="item">
+              <div key={best._id} className="item">
                 <div className="box col-lg-4 col-12">
                   <div className="absolute">
                     <span>BEST</span>
@@ -61,11 +61,11 @@ const BestSellers = () => {
                     <div className="bottom">
                       <NavLink to="/">{best.name}</NavLink>
                       <div className="stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
+                        <i className="fa-solid fa-star"></i>
+                        <i className="fa-solid fa-star"></i>
+                        <i className="fa-solid fa-star"></i>
+                        <i className="fa-solid fa-star"></i>
+                        <i className="fa-solid fa-star"></i>
                         <span>{best.rating}</span>
                       </div>
                       <div className="price">
@@ -84,7 +84,7 @@ const BestSellers = () => {
       <div className="all row">
         {bestSeller &&
           bestSeller.map((best) => (
-            <div className="box col-lg-4 col-12">
+            <div key={best._id} className="box col-lg-4 col-12">
               <div className="absolute">
                 <span>BEST</span>
                 <span>SELLER</span>
@@ -99,11 +99,11 @@ const BestSellers = () => {
                 <div className="bottom">
                   <NavLink to="/">{best.name}</NavLink>
                   <div className="stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
+                    <i className="fa-solid fa-star"></i>
+                    <i className="fa-solid fa-star"></i>
+                    <i className="fa-solid fa-star"></i>
+                    <i className="fa-solid fa-star"></i>
+                    <i className="fa-solid fa-star"></i>
                     <span>{best.rating}</span>
                   </div>
                   <div className="price">

@@ -1,63 +1,128 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import BurgerMenu from '../BurgerMenu/BurgerMenu'
 import './Header.css'
 import BasketHeader from '../BasketHeader/BasketHeader'
+import { useLogo } from '../Context/LogoContext'
+import { useLocation } from 'react-router-dom'
 
 const Header = () => {
+    const location = useLocation()
+    const { logo } = useLogo([]);
+    // const  [aboutStyle, setAboutStyle] = useState('pembe');
+    
+   
+    const about = () => {
+        location.reload()
+        // let white = setAboutStyle('white')
+        // localStorage.setItem('headerColor',JSON.stringify(setAboutStyle('white')))
+    }
     // producstDropDown
     const prodEnter = () =>{
-        document.getElementById('prodDrop').style.display = 'block'
-        document.querySelector('header').style.backgroundColor = 'white'
-        document.querySelector('header').style.transition = '.5s'
-        document.querySelector('.logo').src = 'https://cdn.shopify.com/s/files/1/0012/2296/7353/files/blue-logo_190x.png?v=1654228954'
-        document.querySelector('header').style.borderTop = '1px solid #EBF1F7'
+        if(location.pathname === '/'){
+            document.getElementById('prodDrop').style.display = 'block'
+            document.querySelector('header').style.backgroundColor = 'white'
+            document.querySelector('header').style.transition = '.5s'
+            document.querySelector('.logo').src = logo[0].img[1]
+            document.querySelector('header').style.borderTop = '1px solid #EBF1F7'
+        }else if(location.pathname === '/about'){
+            document.getElementById('prodDrop').style.display = 'block'
+            document.querySelector('header').style.backgroundColor = 'white'
+            document.querySelector('header').style.transition = '.5s'
+            document.querySelector('.logo').src = logo[0].img[1]
+            document.querySelector('header').style.borderTop = '1px solid #EBF1F7'
+        }
     }
 
     const prodLevae = () => {
-        document.getElementById('prodDrop').style.display = 'none'
-        document.querySelector('.logo').src = 'https://cdn.shopify.com/s/files/1/0012/2296/7353/files/PF_Logo_White_Web-01_190x.png?v=1654228576%201x,%20//cdn.shopify.com/s/files/1/0012/2296/7353/files/PF_Logo_White_Web-01_190x@2x.png?v=1654228576%202x'
+        if(location.pathname === '/'){
+            document.getElementById('prodDrop').style.display = 'none'
+        document.querySelector('.logo').src = logo[0].img[0]
         document.querySelector('header').style.backgroundColor = '#FABFA8'
         document.querySelector('header').style.transition = '.5s'
         document.querySelector('header').style.borderTop = 'none'
+        }else if(location.pathname === '/about'){
+        document.getElementById('prodDrop').style.display = 'none'
+        document.querySelector('.logo').src = logo[0].img[1]
+        document.querySelector('header').style.backgroundColor = 'white'
+        document.querySelector('header').style.transition = '.5s'
+        document.querySelector('header').style.borderTop = 'none'
+        }
     }
     // producstDropDown
     // ------------------
     // ourstoryDropDown
     const storyOpen = () => {
+       if(location.pathname === '/'){
         document.getElementById('ourStory').style.display = 'block'
         document.getElementById('ourStory').style.opacity = '1'
         document.getElementById('ourStory').style.transition = 'opacity 1s ease-out'
         document.querySelector('header').style.backgroundColor = 'white'
         document.querySelector('header').style.transition = '.5s'
-        document.querySelector('.logo').src = 'https://cdn.shopify.com/s/files/1/0012/2296/7353/files/blue-logo_190x.png?v=1654228954'
+        document.querySelector('.logo').src = logo[0].img[1]
         document.querySelector('header').style.borderTop = '1px solid #EBF1F7'
+       }else if(location.pathname === '/about'){
+        document.getElementById('ourStory').style.display = 'block'
+        document.getElementById('ourStory').style.opacity = '1'
+        document.getElementById('ourStory').style.transition = 'opacity 1s ease-out'
+        document.querySelector('header').style.backgroundColor = 'white'
+        document.querySelector('header').style.transition = '.5s'
+        document.querySelector('.logo').src = logo[0].img[1]
+        document.querySelector('header').style.borderTop = '1px solid #EBF1F7'
+       }
     }
     const storyClose = () => {
-        document.getElementById('ourStory').style.display = 'none'
-        document.getElementById('ourStory').style.opacity = '0'
-        document.getElementById('ourStory').style.transition = 'opacity 1s ease-out'
-        document.querySelector('.logo').src = 'https://cdn.shopify.com/s/files/1/0012/2296/7353/files/PF_Logo_White_Web-01_190x.png?v=1654228576%201x,%20//cdn.shopify.com/s/files/1/0012/2296/7353/files/PF_Logo_White_Web-01_190x@2x.png?v=1654228576%202x'
-        document.querySelector('header').style.backgroundColor = '#FABFA8'
-        document.querySelector('header').style.transition = '.5s'
-        document.querySelector('header').style.borderTop = 'none'
+        if(location.pathname === '/'){
+            document.getElementById('ourStory').style.display = 'none'
+            document.getElementById('ourStory').style.opacity = '0'
+            document.getElementById('ourStory').style.transition = 'opacity 1s ease-out'
+            document.querySelector('.logo').src = logo[0].img[0]
+            document.querySelector('header').style.backgroundColor = '#FABFA8'
+            document.querySelector('header').style.transition = '.5s'
+            document.querySelector('header').style.borderTop = 'none'
+        }else if(location.pathname === '/about'){
+            document.getElementById('ourStory').style.display = 'none'
+            document.getElementById('ourStory').style.opacity = '0'
+            document.getElementById('ourStory').style.transition = 'opacity 1s ease-out'
+            document.querySelector('.logo').src = logo[0].img[1]
+            document.querySelector('header').style.backgroundColor = 'white'
+            document.querySelector('header').style.transition = '.5s'
+            document.querySelector('header').style.borderTop = 'none'
+        }
     }
     // ourstoryDropDown
     // -----------------
     // blogDropDown
     const blogOpen = () => {
+       if(location.pathname === '/'){
         document.getElementById('blogDropDown').style.display = 'block'
         document.querySelector('header').style.backgroundColor = 'white'
         document.querySelector('header').style.transition = '.5s'
-        document.querySelector('.logo').src = 'https://cdn.shopify.com/s/files/1/0012/2296/7353/files/blue-logo_190x.png?v=1654228954'
+        document.querySelector('.logo').src = logo[0].img[1]
         document.querySelector('header').style.borderTop = '1px solid #EBF1F7'
+       }
+    else if(location.pathname === '/about'){
+        document.getElementById('blogDropDown').style.display = 'block'
+        document.querySelector('header').style.backgroundColor = 'white'
+        document.querySelector('header').style.transition = '.5s'
+        document.querySelector('.logo').src = logo[0].img[1]
+        document.querySelector('header').style.borderTop = '1px solid #EBF1F7'
+       }
     }
     const blogClose = () => {
-        document.getElementById('blogDropDown').style.display = 'none'
-        document.querySelector('.logo').src = 'https://cdn.shopify.com/s/files/1/0012/2296/7353/files/PF_Logo_White_Web-01_190x.png?v=1654228576%201x,%20//cdn.shopify.com/s/files/1/0012/2296/7353/files/PF_Logo_White_Web-01_190x@2x.png?v=1654228576%202x'
-        document.querySelector('header').style.backgroundColor = '#FABFA8'
-        document.querySelector('header').style.transition = '.5s'
-        document.querySelector('header').style.borderTop = 'none'
+        if(location.pathname === '/'){
+            document.getElementById('blogDropDown').style.display = 'none'
+            document.querySelector('.logo').src = logo[0].img[0]
+            document.querySelector('header').style.backgroundColor = '#FABFA8'
+            document.querySelector('header').style.transition = '.5s'
+            document.querySelector('header').style.borderTop = 'none'
+        }else if(location.pathname === '/about'){
+            document.getElementById('blogDropDown').style.display = 'none'
+            document.querySelector('.logo').src = logo[0].img[1]
+            document.querySelector('header').style.backgroundColor = 'white'
+            document.querySelector('header').style.transition = '.5s'
+            document.querySelector('header').style.borderTop = 'none'
+        }
     }
     // blogDropDown
     // input
@@ -85,10 +150,10 @@ const Header = () => {
         document.getElementById('burgers').style.display = 'block'
         document.body.classList.add("stop-scrolling");
     }
-
+    
 
   return (
-    <header>
+    <header id='header'>
         <div className="container">
             <div className="row justify-content-between align-items-center all">
                 <div className="left col-lg-4 col-1">
@@ -100,9 +165,11 @@ const Header = () => {
                    {/* media-mobile search icon */}
                    <i onClick={searchIcon} className="fa-solid fa-magnifying-glass ml-4 mediaSearch" title='search'></i>
                 </div>
-                <div className="center col-lg-4 col-4">
-                    <NavLink to={'/'}><img className='logo' src="https://cdn.shopify.com/s/files/1/0012/2296/7353/files/PF_Logo_White_Web-01_190x.png?v=1654228576%201x,%20//cdn.shopify.com/s/files/1/0012/2296/7353/files/PF_Logo_White_Web-01_190x@2x.png?v=1654228576%202x" alt="logo" /></NavLink>
+                {logo && logo.map((logos) => (
+                    <div key={logos._id} className="center col-lg-4 col-4">
+                    <NavLink to={'/'}><img className='logo' src={logos.img[0]} alt="logo" /></NavLink>
                 </div>
+                ))}
                 <div className="right col-lg-3 align-items-center text-end col-2">
                     <NavLink className='tab' to={'/'}>Find Us</NavLink>
                     <NavLink onMouseEnter={blogOpen} onMouseLeave={blogClose} className='tab' to={'/'}>Blog</NavLink>
@@ -148,7 +215,7 @@ const Header = () => {
                    <div className="containerOurStory">
                    <div className="d-flex">
                         <div className="box col-lg-3 text-center">
-                        <NavLink to='/'> <img className='img-fluid' src="https://cdn.shopify.com/s/files/1/0012/2296/7353/files/Denise_Vivi_Homepage_square.jpg?v=1642469781" alt="img" />
+                        <NavLink onClick={about} to='/about'> <img className='img-fluid' src="https://cdn.shopify.com/s/files/1/0012/2296/7353/files/Denise_Vivi_Homepage_square.jpg?v=1642469781" alt="img" />
                            <br /> ABOUT US</NavLink>
                         </div>
                         <div className="box col-lg-3 text-center">
