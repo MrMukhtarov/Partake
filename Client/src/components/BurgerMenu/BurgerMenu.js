@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "./BurgerMenu.css";
 
+
 const BurgerMenu = () => {
 
     const tabli1 = () => {
@@ -46,6 +47,10 @@ const BurgerMenu = () => {
         document.getElementById('burgers').style.display = 'none'
         document.body.classList.remove("stop-scrolling");
      }
+     const CloseBurgers = () => {
+        document.getElementById('burgers').style.display = 'none'
+        document.body.classList.remove("stop-scrolling");
+     }
 
   return (
     <div className="burgerMenu" id="burgers">
@@ -70,7 +75,7 @@ const BurgerMenu = () => {
                     <hr className="hr"/>
                     <li onClick={tabli2} className="tabName">OUR STORY <i id="down2" className="fa-solid fa-caret-down down"></i></li>
                         <ul className="tabli2" style={{display:"none"}}>
-                            <li className="mt-3"><NavLink to='/'>About Us</NavLink></li>
+                            <li className="mt-3"><NavLink to='/about' onClick={CloseBurgers}>About Us</NavLink></li>
                             <li><NavLink to='/'>FAQ</NavLink></li>
                             <li><NavLink to='/'>Ingredients</NavLink></li>
                             <li><NavLink to='/'>Press</NavLink></li>

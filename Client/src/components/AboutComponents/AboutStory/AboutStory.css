@@ -1,0 +1,76 @@
+.aboutStory{
+    padding: 4rem 4rem;
+}
+.aboutStory{
+    padding-bottom: 0 !important;
+}
+.aboutStoryh1{
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 70px;
+    color: #005099;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.aboutStory .all{
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+}
+.aboutStory .box{
+    display: flex;
+    align-items: center;
+}
+.aboutStory .box .left img{
+    height: 380px;
+    width: 580px;
+    object-fit: cover;
+}
+.aboutStory .box .right h2{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 44px;
+    color: #005099;
+}
+.aboutStory .box .right p{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #005099;
+}
+.aboutStory .box .right{
+    display: flex;
+    flex-direction: column;
+}
+
+@media(max-width: 576px){
+    .aboutStory .aboutStoryh1{
+        font-size: 26px;
+        line-height: 26px;
+    }
+    .aboutStory .box{
+        display: flex;
+        flex-direction: column;
+    }
+    .aboutStory{
+        padding: 30px 10px 40px 10px;
+    }
+    .aboutStory img{
+        width: 100% !important;
+        height: 250px !important;
+    }
+    .aboutStory .box .right h2{
+        font-size: 24px;
+        line-height: 29px;
+        margin-top: 20px;
+    }
+    .aboutStory .box .right p{
+        font-size: 15px;
+        line-height: 23px;
+    }
+    .aboutStory .all{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+}

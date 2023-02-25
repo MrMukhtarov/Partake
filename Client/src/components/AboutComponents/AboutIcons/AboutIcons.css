@@ -1,0 +1,22 @@
+.aboutIcons{
+    padding: 5rem 0;
+    text-align: center;
+}
+.aboutIcons svg{
+    font-size: 65px;
+    color: #005099;
+}
+.aboutIcons .all{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+@media(max-width: 576px){
+    .aboutIcons .all{
+        padding: 0 4rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+}

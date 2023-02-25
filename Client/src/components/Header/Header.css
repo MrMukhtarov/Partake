@@ -23,7 +23,9 @@ header .left,
 header {
     padding: 1.2rem 0;
     background-color: #FABFA8;
+    border-top: 2px solid #EBF1F7;
 }
+
 
 header .right i {
     color: #005099;
@@ -276,13 +278,9 @@ header .container{
 }
 header .all{
     width: 100%;
+    display: flex;
+    flex-direction: row;
 }
 
 }
 /* media */
-.white{
-    background-color: white;
-}
-.pembe{
-    color: #FABFA8;
-}

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { NavLink } from 'react-router-dom'
 import BurgerMenu from '../BurgerMenu/BurgerMenu'
 import './Header.css'
@@ -9,13 +9,10 @@ import { useLocation } from 'react-router-dom'
 const Header = () => {
     const location = useLocation()
     const { logo } = useLogo([]);
-    // const  [aboutStyle, setAboutStyle] = useState('pembe');
     
-   
     const about = () => {
         location.reload()
-        // let white = setAboutStyle('white')
-        // localStorage.setItem('headerColor',JSON.stringify(setAboutStyle('white')))
+      
     }
     // producstDropDown
     const prodEnter = () =>{
@@ -24,13 +21,11 @@ const Header = () => {
             document.querySelector('header').style.backgroundColor = 'white'
             document.querySelector('header').style.transition = '.5s'
             document.querySelector('.logo').src = logo[0].img[1]
-            document.querySelector('header').style.borderTop = '1px solid #EBF1F7'
         }else if(location.pathname === '/about'){
             document.getElementById('prodDrop').style.display = 'block'
             document.querySelector('header').style.backgroundColor = 'white'
             document.querySelector('header').style.transition = '.5s'
             document.querySelector('.logo').src = logo[0].img[1]
-            document.querySelector('header').style.borderTop = '1px solid #EBF1F7'
         }
     }
 
@@ -40,13 +35,11 @@ const Header = () => {
         document.querySelector('.logo').src = logo[0].img[0]
         document.querySelector('header').style.backgroundColor = '#FABFA8'
         document.querySelector('header').style.transition = '.5s'
-        document.querySelector('header').style.borderTop = 'none'
         }else if(location.pathname === '/about'){
         document.getElementById('prodDrop').style.display = 'none'
         document.querySelector('.logo').src = logo[0].img[1]
         document.querySelector('header').style.backgroundColor = 'white'
         document.querySelector('header').style.transition = '.5s'
-        document.querySelector('header').style.borderTop = 'none'
         }
     }
     // producstDropDown
@@ -60,7 +53,6 @@ const Header = () => {
         document.querySelector('header').style.backgroundColor = 'white'
         document.querySelector('header').style.transition = '.5s'
         document.querySelector('.logo').src = logo[0].img[1]
-        document.querySelector('header').style.borderTop = '1px solid #EBF1F7'
        }else if(location.pathname === '/about'){
         document.getElementById('ourStory').style.display = 'block'
         document.getElementById('ourStory').style.opacity = '1'
@@ -68,7 +60,6 @@ const Header = () => {
         document.querySelector('header').style.backgroundColor = 'white'
         document.querySelector('header').style.transition = '.5s'
         document.querySelector('.logo').src = logo[0].img[1]
-        document.querySelector('header').style.borderTop = '1px solid #EBF1F7'
        }
     }
     const storyClose = () => {
@@ -79,7 +70,6 @@ const Header = () => {
             document.querySelector('.logo').src = logo[0].img[0]
             document.querySelector('header').style.backgroundColor = '#FABFA8'
             document.querySelector('header').style.transition = '.5s'
-            document.querySelector('header').style.borderTop = 'none'
         }else if(location.pathname === '/about'){
             document.getElementById('ourStory').style.display = 'none'
             document.getElementById('ourStory').style.opacity = '0'
@@ -87,7 +77,6 @@ const Header = () => {
             document.querySelector('.logo').src = logo[0].img[1]
             document.querySelector('header').style.backgroundColor = 'white'
             document.querySelector('header').style.transition = '.5s'
-            document.querySelector('header').style.borderTop = 'none'
         }
     }
     // ourstoryDropDown
@@ -99,14 +88,12 @@ const Header = () => {
         document.querySelector('header').style.backgroundColor = 'white'
         document.querySelector('header').style.transition = '.5s'
         document.querySelector('.logo').src = logo[0].img[1]
-        document.querySelector('header').style.borderTop = '1px solid #EBF1F7'
        }
     else if(location.pathname === '/about'){
         document.getElementById('blogDropDown').style.display = 'block'
         document.querySelector('header').style.backgroundColor = 'white'
         document.querySelector('header').style.transition = '.5s'
         document.querySelector('.logo').src = logo[0].img[1]
-        document.querySelector('header').style.borderTop = '1px solid #EBF1F7'
        }
     }
     const blogClose = () => {
@@ -115,13 +102,11 @@ const Header = () => {
             document.querySelector('.logo').src = logo[0].img[0]
             document.querySelector('header').style.backgroundColor = '#FABFA8'
             document.querySelector('header').style.transition = '.5s'
-            document.querySelector('header').style.borderTop = 'none'
         }else if(location.pathname === '/about'){
             document.getElementById('blogDropDown').style.display = 'none'
             document.querySelector('.logo').src = logo[0].img[1]
             document.querySelector('header').style.backgroundColor = 'white'
             document.querySelector('header').style.transition = '.5s'
-            document.querySelector('header').style.borderTop = 'none'
         }
     }
     // blogDropDown
@@ -153,7 +138,7 @@ const Header = () => {
     
 
   return (
-    <header id='header'>
+    <header id='header' style={{background: window.location.pathname === '/about' ? 'white' : '#FABFA8'}}>
         <div className="container">
             <div className="row justify-content-between align-items-center all">
                 <div className="left col-lg-4 col-1">
@@ -167,7 +152,7 @@ const Header = () => {
                 </div>
                 {logo && logo.map((logos) => (
                     <div key={logos._id} className="center col-lg-4 col-4">
-                    <NavLink to={'/'}><img className='logo' src={logos.img[0]} alt="logo" /></NavLink>
+                    {window.location.pathname === '/about' ? <NavLink to={'/'}><img className='logo' src={logos.img[1]} alt="logo" /></NavLink> : <NavLink to={'/'}><img className='logo' src={logos.img[0]} alt="logo" /></NavLink>}
                 </div>
                 ))}
                 <div className="right col-lg-3 align-items-center text-end col-2">
