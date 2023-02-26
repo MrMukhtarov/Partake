@@ -21,7 +21,7 @@ const Header = () => {
             document.querySelector('header').style.backgroundColor = 'white'
             document.querySelector('header').style.transition = '.5s'
             document.querySelector('.logo').src = logo[0].img[1]
-        }else if(location.pathname === '/about'){
+        }else{
             document.getElementById('prodDrop').style.display = 'block'
             document.querySelector('header').style.backgroundColor = 'white'
             document.querySelector('header').style.transition = '.5s'
@@ -35,7 +35,7 @@ const Header = () => {
         document.querySelector('.logo').src = logo[0].img[0]
         document.querySelector('header').style.backgroundColor = '#FABFA8'
         document.querySelector('header').style.transition = '.5s'
-        }else if(location.pathname === '/about'){
+        }else{
         document.getElementById('prodDrop').style.display = 'none'
         document.querySelector('.logo').src = logo[0].img[1]
         document.querySelector('header').style.backgroundColor = 'white'
@@ -53,7 +53,7 @@ const Header = () => {
         document.querySelector('header').style.backgroundColor = 'white'
         document.querySelector('header').style.transition = '.5s'
         document.querySelector('.logo').src = logo[0].img[1]
-       }else if(location.pathname === '/about'){
+       }else{
         document.getElementById('ourStory').style.display = 'block'
         document.getElementById('ourStory').style.opacity = '1'
         document.getElementById('ourStory').style.transition = 'opacity 1s ease-out'
@@ -70,7 +70,7 @@ const Header = () => {
             document.querySelector('.logo').src = logo[0].img[0]
             document.querySelector('header').style.backgroundColor = '#FABFA8'
             document.querySelector('header').style.transition = '.5s'
-        }else if(location.pathname === '/about'){
+        }else{
             document.getElementById('ourStory').style.display = 'none'
             document.getElementById('ourStory').style.opacity = '0'
             document.getElementById('ourStory').style.transition = 'opacity 1s ease-out'
@@ -89,7 +89,7 @@ const Header = () => {
         document.querySelector('header').style.transition = '.5s'
         document.querySelector('.logo').src = logo[0].img[1]
        }
-    else if(location.pathname === '/about'){
+    else{
         document.getElementById('blogDropDown').style.display = 'block'
         document.querySelector('header').style.backgroundColor = 'white'
         document.querySelector('header').style.transition = '.5s'
@@ -102,7 +102,7 @@ const Header = () => {
             document.querySelector('.logo').src = logo[0].img[0]
             document.querySelector('header').style.backgroundColor = '#FABFA8'
             document.querySelector('header').style.transition = '.5s'
-        }else if(location.pathname === '/about'){
+        }else{
             document.getElementById('blogDropDown').style.display = 'none'
             document.querySelector('.logo').src = logo[0].img[1]
             document.querySelector('header').style.backgroundColor = 'white'
@@ -138,10 +138,10 @@ const Header = () => {
     
 
   return (
-    <header id='header' style={{background: window.location.pathname === '/about' ? 'white' : '#FABFA8'}}>
+    <header id='header' style={{background: window.location.pathname !== '/' ? 'white' : '#FABFA8'}}>
         <div className="container">
             <div className="row justify-content-between align-items-center all">
-                <div className="left col-lg-4 col-1">
+                <div className="left col-lg-4 col-3">
                    <NavLink onMouseEnter={prodEnter} onMouseLeave={prodLevae}  id='pr' className='tab' to={'/'}>Products</NavLink>
                    <NavLink onMouseEnter={storyOpen} onMouseLeave={storyClose} className='tab' to={'/'}>Our Story</NavLink>
                    <NavLink className='tab' to={'/'}>Ingredients</NavLink>
@@ -151,11 +151,11 @@ const Header = () => {
                    <i onClick={searchIcon} className="fa-solid fa-magnifying-glass ml-4 mediaSearch" title='search'></i>
                 </div>
                 {logo && logo.map((logos) => (
-                    <div key={logos._id} className="center col-lg-4 col-4">
-                    {window.location.pathname === '/about' ? <NavLink to={'/'}><img className='logo' src={logos.img[1]} alt="logo" /></NavLink> : <NavLink to={'/'}><img className='logo' src={logos.img[0]} alt="logo" /></NavLink>}
+                    <div key={logos._id} className="center col-lg-4 col-6">
+                    {window.location.pathname !== '/' ? <NavLink to={'/'}><img className='logo' src={logos.img[1]} alt="logo" /></NavLink> : <NavLink to={'/'}><img className='logo' src={logos.img[0]} alt="logo" /></NavLink>}
                 </div>
                 ))}
-                <div className="right col-lg-3 align-items-center text-end col-2">
+                <div className="right col-lg-3 align-items-center col-3 me-0 pe-0">
                     <NavLink className='tab' to={'/'}>Find Us</NavLink>
                     <NavLink onMouseEnter={blogOpen} onMouseLeave={blogClose} className='tab' to={'/'}>Blog</NavLink>
                     <i onClick={searchIcon} className="fa-solid fa-magnifying-glass ml-4 searchNav" title='search'></i>

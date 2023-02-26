@@ -1,0 +1,43 @@
+.PressIquire{
+    background-color: #00507A;
+    padding: 2.5rem 0;
+    text-align: center;
+}
+.PressIquire p{
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 32px;
+    color: white;
+}
+.PressIquire a{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 4px solid #91DFB9;
+    transition: .3s;
+}
+.PressIquire a:hover{
+    color: #CFDCEB;
+    transition: .3s;
+}
+
+@media(max-width: 576px){
+    .PressIquire p{
+        font-size: 22px;
+        line-height: 24px;
+    }
+    .PressIquire a{
+        font-size: 14px;
+        line-height: 18px;
+        display: inline-block;
+        text-align: center;
+        margin-left: 0 !important;
+        margin-top: 10px;
+    }
+    .PressIquire{
+        padding: 1.5rem 0;
+    }
+}

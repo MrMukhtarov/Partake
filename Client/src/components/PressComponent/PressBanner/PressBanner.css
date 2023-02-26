@@ -1,0 +1,65 @@
+.PressBanner {
+    background-color: #F5DCF7;
+    padding: 0 4rem;
+}
+
+.PressBanner .all h1 {
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 90px;
+    color: #005099;
+}
+
+.PressBanner .all p {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
+    color: #005099;
+}
+
+.PressBanner .all .content {
+    position: absolute;
+    top: 60%;
+    left: 90px;
+    transform: translate(0, -50%);
+}
+
+.PressBanner .all .imgDiv {
+    position: relative;
+}
+
+.PressBanner .imgDiv2 {
+    display: none;
+}
+
+@media(max-width: 576px) {
+    .PressBanner .all .img1 {
+        display: none;
+    }
+
+    .PressBanner .all .imgDiv2 {
+        display: block;
+        left: 0;
+        width: 500px;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    .PressBanner .all .content {
+        position: absolute;
+        top: 180px;
+        text-align: center;
+    }
+
+    .PressBanner .all {
+        display: flex;
+    }
+    .PressBanner .all h1 {
+        font-size: 34px;
+        line-height: 40px;
+    }
+    .PressBanner .all p {
+        font-size: 16px;
+        line-height: 23px;
+    }
+}

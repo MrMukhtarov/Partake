@@ -7,7 +7,7 @@ const AboutLink = () => {
     <div className='AboutLink'>
         <div className="all d-flex">
             <div className="left col-lg-6">
-                <NavLink to='/'>Press</NavLink>
+                <NavLink to='/press'>Press</NavLink>
             </div>
             <div className="right col-lg-6">
                 <NavLink to='/'>Ingredients</NavLink>
