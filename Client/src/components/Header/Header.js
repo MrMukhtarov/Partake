@@ -188,6 +188,7 @@ const Header = () => {
                             </div>
                             <div className="box col-lg-3 text-center">
                                 <NavLink to={'/'}><img className='img-fluid mb-2' src='https://cdn.shopify.com/s/files/1/0012/2296/7353/files/Breakfast_Mixes_Main_Menu_ceee14d2-324b-4824-ab8e-07945334bfef.png?v=1642497596' alt='img'/></NavLink>
+                                <br />
                                 <NavLink className='boxLink' to={'/'}>BREAKFAST MIXES</NavLink>
                             </div>
                         </div>
@@ -209,10 +210,10 @@ const Header = () => {
                         </div>
                         <div className="box col-lg-3 text-center">
                         <NavLink to='/'> <img className='img-fluid' src="https://cdn.shopify.com/s/files/1/0012/2296/7353/files/Ingredients_Menu_220x220_a254a351-a43f-4326-9630-6b50707c68ff.png?v=1642081962" alt="img" />
-                            INGREDIETNS</NavLink>
+                           <br /> INGREDIETNS</NavLink>
                         </div>
                         <div className="box col-lg-3 text-center">
-                        <NavLink to='/'>  <img className='img-fluid' src="https://cdn.shopify.com/s/files/1/0012/2296/7353/files/press_menu_750x.png?v=1642470439" alt="img" />
+                        <NavLink onClick={() => location.reload()} to='/press'>  <img className='img-fluid' src="https://cdn.shopify.com/s/files/1/0012/2296/7353/files/press_menu_750x.png?v=1642470439" alt="img" />
                            <br /> PRESS</NavLink>
                         </div>
                     </div>

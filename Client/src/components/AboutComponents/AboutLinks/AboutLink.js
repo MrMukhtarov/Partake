@@ -6,12 +6,12 @@ const AboutLink = () => {
   return (
     <div className='AboutLink'>
         <div className="all d-flex">
-            <div className="left col-lg-6">
-                <NavLink to='/press'>Press</NavLink>
-            </div>
-            <div className="right col-lg-6">
-                <NavLink to='/'>Ingredients</NavLink>
-            </div>
+            <NavLink to='/press' className="left col-lg-6">
+              Press
+            </NavLink>
+            <NavLink to='/' className="right col-lg-6">
+                Ingredients
+            </NavLink>
         </div>
     </div>
   )

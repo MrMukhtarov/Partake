@@ -13,7 +13,6 @@
     padding: 10rem 2rem;
     text-align: center;
     text-decoration: none;
-    height: 100%;
 }
 .PressFeature  .PressFeatureLeft .name{
     font-weight: 700;
@@ -125,6 +124,7 @@
     }
     .PressFeature .PressFeatureLeft{
         padding: 25px;
+        margin: auto;
     }
     .PressFeature  .PressFeatureLeft .name{
         font-size: 24px;

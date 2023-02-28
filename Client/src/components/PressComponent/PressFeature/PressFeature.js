@@ -6,7 +6,7 @@ const PressFeature = () => {
     <div className="PressFeature">
       <h1 className="headerFeature">Feature Stories</h1>
       <div className="all d-flex">
-        <div className="PressFeatureLeft col-lg-6 col-11 m-auto">
+        <div className="PressFeatureLeft col-lg-6 col-11">
           <div className="name">NOSH</div>
           <p>NOSH Announces Nominees for ‘Best of 2022’ Awards</p>
           <span>November 14, 2022</span>

@@ -1,0 +1,100 @@
+.PressContactUs {
+    padding: 4rem 4rem;
+    background-color: #E5BDDB;
+}
+
+.PressContactUs-h1 {
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 66px;
+    color: #005099;
+    margin-bottom: 30px;
+}
+
+.PressContactUs-all textarea {
+    resize: none;
+    border: none;
+    outline: none;
+    padding: 20px 16px;
+}
+
+.PressContactUs-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.PressContactUs-form input {
+    border: none;
+    outline: none;
+    background-color: white;
+    padding: 25px 20px;
+}
+
+.PressContactUs-form input::placeholder,
+textarea::placeholder {
+    color: #005099;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.PressContactUs-form button {
+    padding: 19px 0;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 15px 35px;
+    box-shadow: none;
+    transition: all .3s ease 0s;
+    cursor: pointer;
+    border: 0.1rem solid transparent;
+    background-color: #005099;
+    color: white;
+    width: 38%;
+}
+
+.PressContactUs-form button:hover {
+    color: #005099;
+    background-color: white;
+    border: 1px solid #005099;
+    transition: all .3s ease 0s;
+}
+
+.PressContactUs-form input:focus::placeholder {
+    font-size: .75em;
+    position: relative;
+    top: -20px;
+    transition: 0.2s ease-out;
+}
+
+.PressContactUs-form textarea:focus::placeholder {
+    font-size: .75em;
+    position: relative;
+    top: -20px;
+    transition: 0.2s ease-out;
+}
+
+@media(max-width:576px) {
+    .PressContactUs {
+        padding: 2rem 25px;
+    }
+
+    .PressContactUs-h1 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .PressContactUs-form input {
+        padding: 20px 20px;
+    }
+
+    .PressContactUs-form button {
+        width: 70%;
+        padding: 10px 0;
+    }
+
+    .PressContactUs-all {
+        display: flex;
+        gap: 80px;
+    }
+}

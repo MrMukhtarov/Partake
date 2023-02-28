@@ -1,0 +1,87 @@
+.PressHighlights{
+    padding: 2rem 4rem;
+}
+.PressHighlights-all{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 35px;
+}
+.pressHiglightsHeader{
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 66px;
+    color: #005099;
+}
+.PressHighlightsboxHead{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 38px;
+    color: #005099;
+    min-height: 54px;
+}
+.PressHighlights-box-text h3{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #005099;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-bottom: 60px;
+}
+.PressHighligts-box-date{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #005099;
+}
+.PressHighlights-box{
+    background-color: #FFF1D8;
+    padding: 50px;
+    border-radius: 5px;
+    text-align: center;
+    width: 31%;
+    text-decoration: none !important;
+}
+
+@media(max-width: 576px){
+    .PressHighlights-box{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding: 20px;
+        text-align: left;
+        align-items: center;
+    }
+    .pressHiglightsHeader{
+        font-size: 36px;
+        line-height: 46px;
+    }
+    .PressHighlights{
+        padding: 1rem 25px;
+    }
+    .PressHighlightsboxHead{
+        font-size: 24px;
+        line-height: 38px;
+        width: 40%;
+    }
+    .PressHighlights-box-text{
+        width: 60%;
+    }
+    .PressHighlights-box-text h3{
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
+    .PressHighligts-box-date{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .PressHighlights-all{
+    row-gap: 20px;
+    }
+
+}

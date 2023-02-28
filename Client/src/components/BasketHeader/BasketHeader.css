@@ -44,7 +44,7 @@
     top: 0;
     left: 0;
     bottom: 0;
-    right: 450px;
+    right: 500px;
     content: ' ';
     background: rgba(0,0,0,.5);
   }
@@ -70,7 +70,7 @@
         top: 0;
         left: 0;
         bottom: 0;
-        right: 340px;
+        right: 320px;
         content: ' ';
     }
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 import "./Footer.css";
 
 const Footer = () => {
@@ -17,7 +17,7 @@ const Footer = () => {
               <NavLink to="/">SITEMAP</NavLink>
             </div>
             <div className="Leftsright col-lg-5 gap-1">
-              <NavLink to="">PRESS</NavLink>
+              <NavLink to='/press'>PRESS</NavLink>
               <NavLink to="">TERMS</NavLink>
               <NavLink to="">PRIVACY</NavLink>
               <NavLink to="">SHIPPING & RETURNS</NavLink>
