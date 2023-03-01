@@ -77,7 +77,7 @@ const BurgerMenu = () => {
                         <ul className="tabli2" style={{display:"none"}}>
                             <li className="mt-3"><NavLink to='/about' onClick={CloseBurgers}>About Us</NavLink></li>
                             <li><NavLink to='/'>FAQ</NavLink></li>
-                            <li><NavLink to='/'>Ingredients</NavLink></li>
+                            <li><NavLink to='/ingredients' onClick={CloseBurgers}>Ingredients</NavLink></li>
                             <li><NavLink to='/press' onClick={CloseBurgers}>Press</NavLink></li>
                         </ul>
                     <hr className="hr"/>

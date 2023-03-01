@@ -1,10 +1,11 @@
-.AboutLink  a{
+.AboutLink a {
     font-weight: 700;
     font-size: 45px;
     color: #005099;
     text-decoration: none;
 }
-.AboutLink .left{
+
+.AboutLink .left {
     display: flex;
     justify-content: center;
     background-color: #92cad6;
@@ -12,12 +13,14 @@
     padding: 2rem 0;
     transition: .3s;
 }
-.AboutLink .left:hover{
+
+.AboutLink .left:hover {
     background-color: #FFC787;
     transition: .3s;
     cursor: pointer;
 }
-.AboutLink .right{
+
+.AboutLink .right {
     background-color: #bdc5f1;
     width: 100%;
     padding: 2rem 0;
@@ -26,26 +29,32 @@
     display: flex;
     justify-content: center;
 }
-.AboutLink .right:hover{
+
+.AboutLink .right:hover {
     background-color: #FFC787;
     transition: .3s;
     cursor: pointer;
 }
-@media(max-width: 576px){
-    .AboutLink .all{
+
+@media(max-width: 576px) {
+    .AboutLink .all {
         display: flex;
         flex-direction: column;
     }
-    .AboutLink .left a{
+
+    .AboutLink .left {
         font-size: 28px;
     }
-    .AboutLink .right a{
+
+    .AboutLink .right {
         font-size: 28px;
     }
-    .AboutLink .left{
+
+    .AboutLink .left {
         padding: 1rem 0;
     }
-    .AboutLink .right{
+
+    .AboutLink .right {
         padding: 1rem 0;
     }
 }

@@ -2,6 +2,7 @@ footer{
     background-color: #235E6B;
     padding: 4rem 4rem;
     position: relative;
+    overflow: hidden;
 }
 footer .all{
     display: flex;
@@ -141,7 +142,7 @@ footer .leftImg{
 footer .rightImg{
     position: absolute;
     bottom: 260px;
-    left: 1170px;
+    left: 1430px;
 }
 footer .inputBtn2{
     display: none;

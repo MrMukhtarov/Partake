@@ -209,7 +209,7 @@ const Header = () => {
                            <br /> FAQ</NavLink>
                         </div>
                         <div className="box col-lg-3 text-center">
-                        <NavLink to='/'> <img className='img-fluid' src="https://cdn.shopify.com/s/files/1/0012/2296/7353/files/Ingredients_Menu_220x220_a254a351-a43f-4326-9630-6b50707c68ff.png?v=1642081962" alt="img" />
+                        <NavLink onClick={() => location.reload()} to='/ingredients'> <img className='img-fluid' src="https://cdn.shopify.com/s/files/1/0012/2296/7353/files/Ingredients_Menu_220x220_a254a351-a43f-4326-9630-6b50707c68ff.png?v=1642081962" alt="img" />
                            <br /> INGREDIETNS</NavLink>
                         </div>
                         <div className="box col-lg-3 text-center">

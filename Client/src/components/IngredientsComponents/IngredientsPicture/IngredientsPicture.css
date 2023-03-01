@@ -1,0 +1,407 @@
+.IngredientsPicture {
+    background-color: #91DFB9;
+    padding: 7rem 1rem;
+}
+
+.IngredientsPicture .hr {
+    font-weight: bold;
+    background-color: #005099;
+    color: #005099;
+    font-size: 5px;
+}
+
+.IngredientsPicture-box-info {
+    border: 1px solid #005099;
+    padding: 15px;
+}
+
+.IngredientsPicture .right .box {
+    transition: .5s;
+}
+
+.IngredientsPicture .right .box img {
+    width: 145px;
+    height: 145px;
+    object-fit: fill;
+    position: relative;
+}
+
+.IngredientsPicture .right {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-right: 0;
+    justify-content: center;
+}
+
+.IngredientsPicture .right .plus {
+    border: 1px solid #007367;
+    border-radius: 50px;
+    padding: 5px;
+    background-color: #007367;
+    color: white;
+    transform: rotate(0deg);
+    transition: .3s ease-in-out;
+}
+
+.IngredientsPicture .right .x {
+    border: 1px solid #fff;
+    border-radius: 50px;
+    padding: 5px;
+    background-color: #fff;
+    color: #007367;
+    transform: rotate(45deg);
+    transition: .3s ease-in-out;
+}
+
+.IngredientsPicture .right i {
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    transition: .2s all ease-in-out;
+    cursor: pointer;
+}
+
+.IngredientsPicture .gingerBox {
+    position: relative;
+}
+
+.IngredientsPicture .ginger,
+.vanilla {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    position: absolute;
+    top: 25px;
+    left: 30px;
+    z-index: 1;
+}
+
+.IngredientsPicture .ginger h5 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #005099;
+}
+
+.IngredientsPicture .ginger,
+.vanilla,
+h5 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #005099;
+}
+
+.IngredientsPicture .ginger,
+.vanilla,
+.oats,
+.flaxs,
+.rosemary,
+.cinnamon,
+.oatflour,
+.chocolate,
+.cessava,
+.sugar,
+.brown,
+.buckwheat p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #005099;
+}
+
+.none {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+
+.IngredientsPicture .vanillaBox {
+    position: relative;
+}
+
+.IngredientsPicture .oatsBox {
+    position: relative;
+}
+
+.IngredientsPicture .oats {
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    width: 250px;
+    border-radius: 10px;
+    position: absolute;
+    top: 10px;
+    left: -180px;
+    z-index: 1;
+}
+
+.IngredientsPicture .flaxBox {
+    position: relative;
+}
+
+.IngredientsPicture .flaxs {
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    width: 250px;
+    border-radius: 10px;
+    position: absolute;
+    top: -100px;
+    left: 40px;
+    z-index: 1;
+}
+
+.IngredientsPicture .rosemaryxBox {
+    position: relative;
+}
+
+.IngredientsPicture .rosemary {
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    width: 250px;
+    border-radius: 10px;
+    position: absolute;
+    top: -100px;
+    left: 40px;
+    z-index: 1;
+}
+
+.IngredientsPicture .cinnamonBox {
+    position: relative;
+}
+
+.IngredientsPicture .cinnamon {
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    width: 250px;
+    border-radius: 10px;
+    position: absolute;
+    top: 5px;
+    left: 40px;
+    z-index: 1;
+}
+
+.IngredientsPicture .oatFlourBox {
+    position: relative;
+}
+
+.IngredientsPicture .oatflour {
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    width: 250px;
+    border-radius: 10px;
+    position: absolute;
+    top: 5px;
+    left: 40px;
+    z-index: 1;
+}
+
+.IngredientsPicture .ChocolateBox {
+    position: relative;
+}
+
+.IngredientsPicture .chocolate {
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    width: 250px;
+    border-radius: 10px;
+    position: absolute;
+    top: 5px;
+    left: 40px;
+    z-index: 1;
+}
+
+.IngredientsPicture .CessavaBox {
+    position: relative;
+}
+
+.IngredientsPicture .cessava {
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    width: 250px;
+    border-radius: 10px;
+    position: absolute;
+    top: 5px;
+    left: 40px;
+    z-index: 1;
+}
+
+.IngredientsPicture .SugarBox {
+    position: relative;
+}
+
+.IngredientsPicture .sugar {
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    width: 250px;
+    border-radius: 10px;
+    position: absolute;
+    top: -25px;
+    left: 40px;
+    z-index: 1;
+}
+
+.IngredientsPicture .BrownBox {
+    position: relative;
+}
+
+.IngredientsPicture .brown {
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    width: 250px;
+    border-radius: 10px;
+    position: absolute;
+    top: -75px;
+    left: 40px;
+    z-index: 1;
+}
+
+.IngredientsPicture .BuckwheatBox {
+    position: relative;
+}
+
+.IngredientsPicture .buckwheat {
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    width: 250px;
+    border-radius: 10px;
+    position: absolute;
+    top: -25px;
+    left: 40px;
+    z-index: 1;
+}
+
+@media(max-width: 576px) {
+    .IngredientsPicture .all {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-left: 0;
+        gap: 0;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .IngredientsPicture .right .box img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .IngredientsPicture {
+        padding-right: 0;
+        padding-left: 0;
+        padding: 3rem 0;
+    }
+
+    .IngredientsPicture .right {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .IngredientsPicture .ginger,
+    .vanilla,
+    h5 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .IngredientsPicture .ginger,
+    .vanilla,
+    .oats,
+    .flaxs,
+    .rosemary,
+    .cinnamon p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .IngredientsPicture .vanilla {
+        width: 210px;
+        border-radius: 10px;
+        top: 40px;
+        left: -50px;
+    }
+
+    .IngredientsPicture .oats {
+        padding: 5px;
+        width: 210px;
+        border-radius: 10px;
+        top: 20px;
+        left: -200px;
+    }
+
+    .IngredientsPicture .flaxs {
+        padding: 5px;
+        width: 210px;
+        border-radius: 10px;
+        top: -120px;
+    }
+
+    .IngredientsPicture .rosemary {
+        padding: 5px;
+        width: 210px;
+        border-radius: 10px;
+        top: 40px;
+        left: -35px;
+    }
+
+    .IngredientsPicture .cinnamon {
+        padding: 6px;
+        width: 210px;
+        border-radius: 10px;
+        top: -160px;
+        left: -200px;
+    }
+
+    .IngredientsPicture .chocolate {
+        top: -95px;
+        left: 39px;
+        padding: 8px;
+        width: 200px;
+    }
+    .IngredientsPicture .cessava {
+        padding: 10px;
+        width: 250px;
+        top: -15px;
+        left: -245px;
+    }
+
+    .IngredientsPicture .sugar {
+        padding: 10px;
+        width: 250px;
+        top: -190px;
+        left: 45px;
+    }
+    .IngredientsPicture .buckwheat {
+        padding: 10px;
+        width: 250px;
+        top: -100px;
+        left: -245px;
+    }
+    .IngredientsPicture .brown {
+        padding: 10px;
+        width: 250px;
+        top: -270px;
+        left: -70px;
+    }
+}

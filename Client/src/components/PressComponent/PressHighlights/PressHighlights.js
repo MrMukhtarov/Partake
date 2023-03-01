@@ -38,11 +38,7 @@ const PressHighlights = () => {
           </div>
         </NavLink>
         {/* ------ */}
-        <NavLink
-          to="https://techcrunch.com/2022/10/04/partake-foods-allergy-friendly-series-b/?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAANNWQCELV621rQiUhsSNUYBTT8mHoFpbwG1jFdNLWywhdmJeLMlveOkjNdAu9wX9WDG1pzZ8rdhOLINvl-FtzeZL4ZjWgHRqUpLlCQ-SzqGq7EqUtemz9-Uj-pKBo2K-W0asl4nLoZWhb1hVKC4H6RFFPm1OdtCT-iSHiL8r5seI"
-          target="_blank"
-          className="PressHighlights-box"
-        >
+        <NavLink to="" className="PressHighlights-box">
           <div className="PressHighlightsboxHead">TechCrunch</div>
           <div className="PressHighlights-box-text">
             <h3>
@@ -53,11 +49,7 @@ const PressHighlights = () => {
           </div>
         </NavLink>
         {/* ------ */}
-        <NavLink
-          to="https://www.inc.com/xintian-tina-wang/black-business.html"
-          target="_blank"
-          className="PressHighlights-box"
-        >
+        <NavLink to="" className="PressHighlights-box">
           <div className="PressHighlightsboxHead">Inc.</div>
           <div className="PressHighlights-box-text">
             <h3>
@@ -69,11 +61,7 @@ const PressHighlights = () => {
           </div>
         </NavLink>
         {/* ------ */}
-        <NavLink
-          to="https://www.dwell.com/article/partake-denise-woodard-kitchen-baking-favorites-1694dab5"
-          target="_blank"
-          className="PressHighlights-box"
-        >
+        <NavLink to="" className="PressHighlights-box">
           <div className="PressHighlightsboxHead">Dwell</div>
           <div className="PressHighlights-box-text">
             <h3>
@@ -83,11 +71,7 @@ const PressHighlights = () => {
           </div>
         </NavLink>
         {/* ------ */}
-        <NavLink
-          to="https://edition.cnn.com/videos/tv/2022/03/21/taking-care-of-business-partake-foods-denise-woodard.cnn"
-          target="_blank"
-          className="PressHighlights-box"
-        >
+        <NavLink to="" className="PressHighlights-box">
           <div className="PressHighlightsboxHead">CNN</div>
           <div className="PressHighlights-box-text">
             <h3>One mom's mission to make safe snacks for all</h3>
@@ -95,11 +79,7 @@ const PressHighlights = () => {
           </div>
         </NavLink>
         {/* ------ */}
-        <NavLink
-          to="https://www.cbsnews.com/news/partake-foods-cookies-allergies/"
-          target="_blank"
-          className="PressHighlights-box"
-        >
+        <NavLink to="" className="PressHighlights-box">
           <div className="PressHighlightsboxHead">CBS News</div>
           <div className="PressHighlights-box-text">
             <h3>
@@ -110,11 +90,7 @@ const PressHighlights = () => {
           </div>
         </NavLink>
         {/* ------ */}
-        <NavLink
-          to="https://www.forbes.com/sites/chloesorvino/2021/07/22/partake-foods-hbcu-fellows-program-is-a-model-for-the-food-industry/?sh=189db0b92a4a"
-          target="_blank"
-          className="PressHighlights-box"
-        >
+        <NavLink to="" className="PressHighlights-box">
           <div className="PressHighlightsboxHead">Forbes</div>
           <div className="PressHighlights-box-text">
             <h3>

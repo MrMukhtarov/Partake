@@ -1,0 +1,57 @@
+.IngredientsStart{
+    padding: 7rem;
+}
+.IngredientsStart-right{
+    padding: 50px 25px;
+}
+.IngredientsStart-right h2{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 44px;
+    color: #005099;
+}
+.IngredientsStart-right p{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 35px;
+    color: #005099;
+    margin-bottom: 30px !important;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+.IngredientsStart-right a{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    color: #005099;
+    border-bottom: 5px solid #91dfb9;
+    transition: .3s ease;
+}
+.IngredientsStart-right a:hover{
+    color: #91dfb9;
+    border-color: #005099;
+    transition: .3s ease;
+}
+@media(max-width:576px){
+    .IngredientsStart{
+        padding: 50px 0;
+    }
+    .IngredientsStart-all{
+        display: flex;
+        flex-direction: column;
+    }
+    .IngredientsStart-right h2{
+        font-size: 24px;
+        line-height: 32px;
+        margin: 0;
+    }
+    .IngredientsStart-right p{
+        font-size: 15px;
+        line-height: 23px;
+    }
+    .IngredientsStart-right a{
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
