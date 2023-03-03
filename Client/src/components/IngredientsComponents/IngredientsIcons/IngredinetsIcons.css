@@ -14,7 +14,7 @@
     display: flex;
     gap: 30px;
     padding: 0 4rem;
-    justify-content: center;
+    justify-content: center; 
 }
 
 .IngredientsIcons .bottom svg {

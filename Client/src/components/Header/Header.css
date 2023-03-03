@@ -267,6 +267,9 @@ header .burger {
 .none {
     display: none;
 }
+.hideindesktop{
+    display: none;
+}
 
 @media(max-width: 576px) {
     header .left a {
@@ -306,14 +309,17 @@ header .burger {
     header .container {
         padding: 0 0;
     }
-
-    /* header .all{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-} */
     header{
         overflow: hidden;
+    }
+    .hideindesktop{
+        display: block;
+        max-width: 100%;
+        position: absolute;
+        top: 37px;
+        left: 0;
+        height: 350px !important;
+        width: 100% !important;
     }
 
 }

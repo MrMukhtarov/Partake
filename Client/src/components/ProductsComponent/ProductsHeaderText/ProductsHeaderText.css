@@ -1,0 +1,49 @@
+.ProducstHeaderText{
+    position: absolute;
+    top: 220px;
+    left: 50px;
+}
+
+.ProducstHeaderText h1{
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 120px;
+    color: #ffffff;
+}
+.ProducstHeaderText p{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-left: 20px;
+    margin-top: 43px;
+}
+.ProducstHeaderText-all{
+    display: flex;
+}
+@media(max-width: 576px){
+    .ProducstHeaderText h1{
+        font-size: 45px;
+        line-height: 45px;
+    }
+    .ProducstHeaderText p{
+        font-size: 18px;
+        line-height: 27px;
+        margin: 0;
+        margin-top: 10px;
+    }
+    .ProducstHeaderText-all{
+        display: flex;
+        flex-direction: column;
+        justify-content: start !important;
+    }
+    .ProducstHeaderText{
+        position: absolute;
+        top: 220px;
+        left: 15px;
+        text-align: left !important;
+        display: flex;
+    }
+}
