@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import CrunchyCookies from "../CruncyCookies/CrunchyCookies";
 import "./MainProducts.css";
 
 const MainProducst = () => {
@@ -39,8 +40,8 @@ const MainProducst = () => {
   }
   return (
     <div className="MainProducst">
-      <div className="all">
-        <div className="MainProducst-left col-lg-3">
+      <div className="MainProducst-all d-flex justify-content-between">
+        <div className="MainProducst-left col-lg-2 p-0">
             <div onClick={MobileProducstMenu} id="MainProducst-menu-mobile">
                 <NavLink  to='#'>Category Selection <i id="down-menu" className="fa-solid fa-caret-down"></i></NavLink>
             </div>
@@ -52,7 +53,7 @@ const MainProducst = () => {
             </li>
             <ul style={{ opacity: "0", height: '0' }} className="cookiesLi">
               <li>
-                <NavLink to="#">Crunchy Cookies</NavLink>
+                <a href="#crunchy">Crunchy Cookies</a>
               </li>
               <li>
                 <NavLink to="#">Soft Baked Cookies</NavLink>
@@ -78,7 +79,9 @@ const MainProducst = () => {
             </li>
           </ul>
         </div>
-        <div className="right"></div>
+        <div className="right col-lg-10">
+          <CrunchyCookies/>
+        </div>
       </div>
     </div>
   );

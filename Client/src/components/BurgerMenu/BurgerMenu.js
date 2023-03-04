@@ -61,6 +61,7 @@ const BurgerMenu = () => {
                 <ul>
                 <li className="tabName" onClick={tabli1}>PRODUCTS <i id="down1" className="fa-solid fa-caret-down down"></i></li>
                         <ul className="tabli1" style={{display:"none"}} >
+                            <li className="mt-3"><NavLink to='/products' onClick={CloseBurgers}>Products All</NavLink></li>
                             <li className="mt-3"><NavLink to='/'>Best Sellers</NavLink></li>
                             <li><NavLink to='/'>Snack Packs</NavLink></li>
                             <li><NavLink to='/'>Gifts</NavLink></li>
@@ -81,7 +82,7 @@ const BurgerMenu = () => {
                             <li><NavLink to='/press' onClick={CloseBurgers}>Press</NavLink></li>
                         </ul>
                     <hr className="hr"/>
-                    <li><NavLink className="tabName" to='/'>INGREDIENTS</NavLink>
+                    <li><NavLink className="tabName" to='/ingredients' onClick={CloseBurgers}>INGREDIENTS</NavLink>
                     </li>
                     <hr className="hr"/>
                     <li><NavLink className="tabName" to='/'>FIND US</NavLink>

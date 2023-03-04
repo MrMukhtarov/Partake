@@ -9,6 +9,8 @@ dotenv.config();
 const CategoryRoutes = require("./routes/CategoryRoutes.js");
 const ProductsRoutes = require("./routes/ProductsRoutes.js");
 const LogoRoutes = require("./routes/LogoRoutes.js");
+const SubCategoryRoutes = require("./routes/SubCategoryRoutes.js");
+const StatusRoutes = require("./routes/StatusRoutes.js");
 // ROUTES
 
 const app = express();
@@ -18,6 +20,8 @@ app.use(express.json());
 app.use("/category", CategoryRoutes);
 app.use("/products", ProductsRoutes);
 app.use("/logo", LogoRoutes);
+app.use("/subcategory", SubCategoryRoutes);
+app.use("/status", StatusRoutes);
 
 mongoose
   .connect(process.env.MONGO_URL)

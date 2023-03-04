@@ -1,0 +1,141 @@
+.CrunchyCookies {
+    padding: 1rem 1rem;
+}
+
+.CrunchyCookies .title {
+    font-weight: 700;
+    font-size: 36px;
+    color: #005099;
+    line-height: 52px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+.CrunchyCookies-all{
+    display: flex;
+    row-gap: 50px;
+}
+
+.CrunchyCookies .boxLink {
+    text-decoration: none;
+}
+
+.CrunchyCookies .bottom a {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: #005099;
+    transition: .3s;
+    text-decoration: none;
+}
+
+.CrunchyCookies .CrunchyCookies-box:hover .bottom a {
+    color: #91dfb9;
+    transition: .3s;
+}
+
+.CrunchyCookies .CrunchyCookies-box:hover .quick-add {
+    display: block;
+    transition: .10s;
+}
+
+.CrunchyCookies .CrunchyCookies-box {
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+    transition: .5s;
+    width: 33%;
+}
+
+.CrunchyCookies .bottom {
+    margin-top: 20px;
+}
+
+.CrunchyCookies .bottom i {
+    color: #005099;
+    font-size: 20px;
+}
+
+.CrunchyCookies .bottom .stars {
+    margin-top: 6px;
+}
+
+.CrunchyCookies .stars span {
+    margin-left: 8px;
+    color: #005099;
+}
+
+.CrunchyCookies .price {
+    margin-top: 7px;
+}
+
+.CrunchyCookies .price span {
+    font-size: 18px;
+}
+
+.CrunchyCookies .absolute {
+    background-color: #91DFB9;
+    border-radius: 100%;
+    position: absolute;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    left: 230px;
+    top: -50px;
+}
+
+.CrunchyCookies .absolute span {
+    color: #005099;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.CrunchyCookies .quick-add {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #005099;
+    width: 80%;
+    background-color: white;
+    padding: 15px;
+    display: none;
+}
+
+.CrunchyCookies .quick-add:hover {
+    background-color: #91DFB9;
+    border: none;
+}
+
+.CrunchyCookies .quick-add:hover a {
+    color: white;
+}
+
+.CrunchyCookies img {
+    height: 450px;
+    object-fit: cover;
+    background-color: #F5F5F5;
+    
+}
+
+.CrunchyCookies .quick-add a {
+    color: #005099;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@media(max-width: 576px) {
+    .CrunchyCookies {
+        padding: 2rem 20px;
+    }
+    .CrunchyCookies .title {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+    .bestSellers .bottom a {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .CrunchyCookies-box{
+        width: 100% !important;
+    }
+}

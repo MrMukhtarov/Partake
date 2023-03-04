@@ -269,7 +269,8 @@ const Header = () => {
                 color: location.pathname === "/products" ? "white" : "",
               }}
               className="tab headera"
-              to={"/"}
+              to={"/ingredients"}
+              onClick={() => location.reload()}
             >
               Ingredients
             </NavLink>

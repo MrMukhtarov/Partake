@@ -15,7 +15,7 @@ export const BestSellerContext = ({ children }) => {
       .then((res) =>
         setBestSeller(
           res.data.products.filter(
-            (a) => a.category === "63f64625a04dac5f36519ad2"
+            (a) => a.status === "6403326e7694afa7307efdd8"
           )
         )
       )

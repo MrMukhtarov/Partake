@@ -22,6 +22,14 @@ const productSchema = new mongoose.Schema({
         type: ObjectId,
         ref: "Category",
     },
+    subCategory : {
+        type: ObjectId,
+        ref: "SubCategory",
+    },
+    status : {
+        type: ObjectId,
+        ref: "Status",
+    },
     rating : {
         type : Number,
         required : true
