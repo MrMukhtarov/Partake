@@ -1,10 +1,10 @@
-.featuredImages .right{
+.featuredImages .featuredImages-right{
     background-color: #92CAD6;
     display: flex;
     flex-direction: column;
     padding: 3rem;
 }
-.featuredImages .right h2{
+.featuredImages .featuredImages-right h2{
     font-weight: 700;
     font-size: 45px;
     color: #235e6b;
@@ -19,19 +19,19 @@
     width: 70%;
 }
 
-.featuredImages .right .first i{
+.featuredImages .featuredImages-right .first i{
     font-weight: 700;
     font-size: 40px;
     color: #235E6B;
 }
-.featuredImages .right .first p{
+.featuredImages .featuredImages-right .first p{
     font-weight: 700;
     font-size: 18px;
     line-height: 26px;
     color: #235e6b;
     margin-bottom: 0;
 }
-.featuredImages .right a{
+.featuredImages .featuredImages-right a{
     font-weight: 700;
     font-size: 18px;
     color: #235e6b;
@@ -40,7 +40,7 @@
     border-bottom: 4px solid #235e6b;
     transition: .3s;
 }
-.featuredImages .right a:hover{
+.featuredImages .featuredImages-right a:hover{
     color: white;
     transition: .3s;
     border-color: white;
@@ -51,7 +51,7 @@
         display: flex;
         flex-direction: column;
     }
-    .featuredImages .right{
+    .featuredImages .featuredImages-right{
         padding: 30px 20px;
     }
     .featuredImages .right h2{
@@ -59,16 +59,16 @@
         width: 100%;
         font-weight: 700;
     }
-    .featuredImages .right .rightP{
+    .featuredImages .featuredImages-right .rightP{
         font-size: 16px;
         line-height: 25px;
         width: 100%;
     }
-    .featuredImages .right .first p{
+    .featuredImages .featuredImages-right .first p{
         font-size: 15px;
         line-height: 22px;
     }
-    .featuredImages .right .first i{
+    .featuredImages .featuredImages-right .first i{
         font-size: 30px;
     }
     .featuredImages a{

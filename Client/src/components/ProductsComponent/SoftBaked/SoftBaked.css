@@ -1,8 +1,9 @@
-.CrunchyCookies {
+.SoftBaked {
     padding: 1rem 1rem;
+    margin-top: 50px;
 }
 
-.CrunchyCookies .title {
+.SoftBaked .title {
     font-weight: 700;
     font-size: 36px;
     color: #005099;
@@ -10,16 +11,16 @@
     margin-bottom: 60px;
     text-align: center;
 }
-.CrunchyCookies-all{
+.SoftBaked-all{
     display: flex;
     row-gap: 50px;
 }
 
-.CrunchyCookies .boxLink {
+.SoftBaked .boxLink {
     text-decoration: none;
 }
 
-.CrunchyCookies .bottom a {
+.SoftBaked .SoftBaked-bottom a {
     font-weight: 700;
     font-size: 22px;
     line-height: 27px;
@@ -28,17 +29,17 @@
     text-decoration: none;
 }
 
-.CrunchyCookies .CrunchyCookies-box:hover .bottom a {
+.SoftBaked .SoftBaked-box:hover .SoftBaked-bottom a {
     color: #91dfb9;
     transition: .3s;
 }
 
-.CrunchyCookies .CrunchyCookies-box:hover .quick-add {
+.SoftBaked .SoftBaked-box:hover .quick-add {
     display: block;
     transition: .10s;
 }
 
-.CrunchyCookies .CrunchyCookies-box {
+.SoftBaked .SoftBaked-box {
     text-align: center;
     position: relative;
     margin-top: 20px;
@@ -46,34 +47,34 @@
     width: 33%;
 }
 
-.CrunchyCookies .bottom {
+.SoftBaked .SoftBaked-bottom {
     margin-top: 20px;
     height: 100px;
 }
 
-.CrunchyCookies .bottom i {
+.SoftBaked .SoftBaked-bottom i {
     color: #005099;
     font-size: 20px;
 }
 
-.CrunchyCookies .bottom .stars {
+.SoftBaked .SoftBaked-bottom .stars {
     margin-top: 6px;
 }
 
-.CrunchyCookies .stars span {
+.SoftBaked .stars span {
     margin-left: 8px;
     color: #005099;
 }
 
-.CrunchyCookies .price {
+.SoftBaked .price {
     margin-top: 7px;
 }
 
-.CrunchyCookies .price span {
+.SoftBaked .price span {
     font-size: 18px;
 }
 
-.CrunchyCookies .absolute {
+.SoftBaked .absolute {
     background-color: #91DFB9;
     border-radius: 100%;
     position: absolute;
@@ -85,16 +86,15 @@
     height: 86px;
     display: flex;
     justify-content: center;
-
 }
 
-.CrunchyCookies .absolute span {
+.SoftBaked .absolute span {
     color: #005099;
     font-weight: 700;
     font-size: 13px;
 }
 
-.CrunchyCookies .quick-add {
+.SoftBaked .quick-add {
     position: absolute;
     top: 68%;
     left: 50%;
@@ -106,16 +106,16 @@
     display: none;
 }
 
-.CrunchyCookies .quick-add:hover {
+.SoftBaked .quick-add:hover {
     background-color: #91DFB9;
     border: none;
 }
 
-.CrunchyCookies .quick-add:hover a {
+.SoftBaked .quick-add:hover a {
     color: white;
 }
 
-.CrunchyCookies img {
+.SoftBaked img {
     height: 420px;
     width: 420px;
     object-fit: cover;
@@ -125,25 +125,25 @@
     
 }
 
-.CrunchyCookies .quick-add a {
+.SoftBaked .quick-add a {
     color: #005099;
     font-weight: bold;
     text-decoration: none;
 }
 
 @media(max-width: 576px) {
-    .CrunchyCookies {
+    .SoftBaked {
         padding: 2rem 20px;
     }
-    .CrunchyCookies .title {
+    .SoftBaked .title {
         font-size: 28px;
         margin-bottom: 10px;
     }
-    .bestSellers .bottom a {
+    .SoftBaked .SoftBaked-bottom a {
         font-size: 18px;
         line-height: 22px;
     }
-    .CrunchyCookies-box{
+    .SoftBaked-box{
         width: 100% !important;
     }
 }

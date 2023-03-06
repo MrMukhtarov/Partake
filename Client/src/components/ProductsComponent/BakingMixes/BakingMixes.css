@@ -1,8 +1,9 @@
-.CrunchyCookies {
+.bakingMixes {
     padding: 1rem 1rem;
+    margin-top: 50px;
 }
 
-.CrunchyCookies .title {
+.bakingMixes .title {
     font-weight: 700;
     font-size: 36px;
     color: #005099;
@@ -10,16 +11,16 @@
     margin-bottom: 60px;
     text-align: center;
 }
-.CrunchyCookies-all{
+.bakingMixes-all{
     display: flex;
     row-gap: 50px;
 }
 
-.CrunchyCookies .boxLink {
+.bakingMixes .boxLink {
     text-decoration: none;
 }
 
-.CrunchyCookies .bottom a {
+.bakingMixes .bakingMixes-bottom a {
     font-weight: 700;
     font-size: 22px;
     line-height: 27px;
@@ -28,17 +29,17 @@
     text-decoration: none;
 }
 
-.CrunchyCookies .CrunchyCookies-box:hover .bottom a {
+.bakingMixes .bakingMixes-box:hover .bakingMixes-bottom a {
     color: #91dfb9;
     transition: .3s;
 }
 
-.CrunchyCookies .CrunchyCookies-box:hover .quick-add {
+.bakingMixes .bakingMixes-box:hover .quick-add {
     display: block;
     transition: .10s;
 }
 
-.CrunchyCookies .CrunchyCookies-box {
+.bakingMixes .bakingMixes-box {
     text-align: center;
     position: relative;
     margin-top: 20px;
@@ -46,55 +47,54 @@
     width: 33%;
 }
 
-.CrunchyCookies .bottom {
+.bakingMixes .bakingMixes-bottom {
     margin-top: 20px;
     height: 100px;
 }
 
-.CrunchyCookies .bottom i {
+.bakingMixes .bakingMixes-bottom i {
     color: #005099;
     font-size: 20px;
 }
 
-.CrunchyCookies .bottom .stars {
+.bakingMixes .bakingMixes-bottom .stars {
     margin-top: 6px;
 }
 
-.CrunchyCookies .stars span {
+.bakingMixes .stars span {
     margin-left: 8px;
     color: #005099;
 }
 
-.CrunchyCookies .price {
+.bakingMixes .price {
     margin-top: 7px;
 }
 
-.CrunchyCookies .price span {
+.bakingMixes .price span {
     font-size: 18px;
 }
 
-.CrunchyCookies .absolute {
+.bakingMixes .absolute {
     background-color: #91DFB9;
-    border-radius: 100%;
+    border-radius: 50%;
     position: absolute;
-    display: flex;
-    flex-direction: column;
-    left: 230px;
-    top: -50px;
     width: 86px;
     height: 86px;
     display: flex;
     justify-content: center;
-
+    display: flex;
+    flex-direction: column;
+    left: 230px;
+    top: -50px;
 }
 
-.CrunchyCookies .absolute span {
+.bakingMixes .absolute span {
     color: #005099;
     font-weight: 700;
-    font-size: 13px;
+    font-size: 14px;
 }
 
-.CrunchyCookies .quick-add {
+.bakingMixes .quick-add {
     position: absolute;
     top: 68%;
     left: 50%;
@@ -106,16 +106,16 @@
     display: none;
 }
 
-.CrunchyCookies .quick-add:hover {
+.bakingMixes .quick-add:hover {
     background-color: #91DFB9;
     border: none;
 }
 
-.CrunchyCookies .quick-add:hover a {
+.bakingMixes .quick-add:hover a {
     color: white;
 }
 
-.CrunchyCookies img {
+.bakingMixes img {
     height: 420px;
     width: 420px;
     object-fit: cover;
@@ -125,25 +125,25 @@
     
 }
 
-.CrunchyCookies .quick-add a {
+.bakingMixes .quick-add a {
     color: #005099;
     font-weight: bold;
     text-decoration: none;
 }
 
 @media(max-width: 576px) {
-    .CrunchyCookies {
+    .bakingMixes {
         padding: 2rem 20px;
     }
-    .CrunchyCookies .title {
+    .bakingMixes .title {
         font-size: 28px;
         margin-bottom: 10px;
     }
-    .bestSellers .bottom a {
+    .bakingMixes .bakingMixes-bottom a {
         font-size: 18px;
         line-height: 22px;
     }
-    .CrunchyCookies-box{
+    .bakingMixes-box{
         width: 100% !important;
     }
 }

@@ -1,8 +1,9 @@
-.CrunchyCookies {
+.breakfastMixes {
     padding: 1rem 1rem;
+    margin-top: 50px;
 }
 
-.CrunchyCookies .title {
+.breakfastMixes .title {
     font-weight: 700;
     font-size: 36px;
     color: #005099;
@@ -10,16 +11,16 @@
     margin-bottom: 60px;
     text-align: center;
 }
-.CrunchyCookies-all{
+.breakfastMixes-all{
     display: flex;
     row-gap: 50px;
 }
 
-.CrunchyCookies .boxLink {
+.breakfastMixes .boxLink {
     text-decoration: none;
 }
 
-.CrunchyCookies .bottom a {
+.breakfastMixes .breakfastMixes-bottom a {
     font-weight: 700;
     font-size: 22px;
     line-height: 27px;
@@ -28,17 +29,17 @@
     text-decoration: none;
 }
 
-.CrunchyCookies .CrunchyCookies-box:hover .bottom a {
+.breakfastMixes .breakfastMixes-box:hover .breakfastMixes-bottom a {
     color: #91dfb9;
     transition: .3s;
 }
 
-.CrunchyCookies .CrunchyCookies-box:hover .quick-add {
+.breakfastMixes .breakfastMixes-box:hover .quick-add {
     display: block;
     transition: .10s;
 }
 
-.CrunchyCookies .CrunchyCookies-box {
+.breakfastMixes .breakfastMixes-box {
     text-align: center;
     position: relative;
     margin-top: 20px;
@@ -46,55 +47,54 @@
     width: 33%;
 }
 
-.CrunchyCookies .bottom {
+.breakfastMixes .breakfastMixes-bottom {
     margin-top: 20px;
     height: 100px;
 }
 
-.CrunchyCookies .bottom i {
+.breakfastMixes .breakfastMixes-bottom i {
     color: #005099;
     font-size: 20px;
 }
 
-.CrunchyCookies .bottom .stars {
+.breakfastMixes .breakfastMixes-bottom .stars {
     margin-top: 6px;
 }
 
-.CrunchyCookies .stars span {
+.breakfastMixes .stars span {
     margin-left: 8px;
     color: #005099;
 }
 
-.CrunchyCookies .price {
+.breakfastMixes .price {
     margin-top: 7px;
 }
 
-.CrunchyCookies .price span {
+.breakfastMixes .price span {
     font-size: 18px;
 }
 
-.CrunchyCookies .absolute {
+.breakfastMixes .absolute {
     background-color: #91DFB9;
-    border-radius: 100%;
+    border-radius: 50%;
     position: absolute;
-    display: flex;
-    flex-direction: column;
-    left: 230px;
-    top: -50px;
     width: 86px;
     height: 86px;
     display: flex;
     justify-content: center;
-
+    display: flex;
+    flex-direction: column;
+    left: 230px;
+    top: -50px;
 }
 
-.CrunchyCookies .absolute span {
+.breakfastMixes .absolute span {
     color: #005099;
     font-weight: 700;
-    font-size: 13px;
+    font-size: 14px;
 }
 
-.CrunchyCookies .quick-add {
+.breakfastMixes .quick-add {
     position: absolute;
     top: 68%;
     left: 50%;
@@ -106,16 +106,16 @@
     display: none;
 }
 
-.CrunchyCookies .quick-add:hover {
+.breakfastMixes .quick-add:hover {
     background-color: #91DFB9;
     border: none;
 }
 
-.CrunchyCookies .quick-add:hover a {
+.breakfastMixes .quick-add:hover a {
     color: white;
 }
 
-.CrunchyCookies img {
+.breakfastMixes img {
     height: 420px;
     width: 420px;
     object-fit: cover;
@@ -125,25 +125,25 @@
     
 }
 
-.CrunchyCookies .quick-add a {
+.breakfastMixes .quick-add a {
     color: #005099;
     font-weight: bold;
     text-decoration: none;
 }
 
 @media(max-width: 576px) {
-    .CrunchyCookies {
+    .breakfastMixes {
         padding: 2rem 20px;
     }
-    .CrunchyCookies .title {
+    .breakfastMixes .title {
         font-size: 28px;
         margin-bottom: 10px;
     }
-    .bestSellers .bottom a {
+    .breakfastMixes .breakfastMixes-bottom a {
         font-size: 18px;
         line-height: 22px;
     }
-    .CrunchyCookies-box{
+    .breakfastMixes-box{
         width: 100% !important;
     }
 }

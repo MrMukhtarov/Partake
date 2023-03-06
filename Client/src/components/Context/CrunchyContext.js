@@ -14,9 +14,7 @@ export const CrunchyContext = ({ children }) => {
       .get("http://localhost:3001/products")
       .then((res) =>
         setCrunchy(
-          res.data.products.filter(
-            (a) => a.category === "6403108d1d00e7ed7ad01b7d"
-          )
+          res.data.products.filter(a => a.category[0] === "6403108d1d00e7ed7ad01b7d")
         )
       )
       .catch((err) => console.log(err));
