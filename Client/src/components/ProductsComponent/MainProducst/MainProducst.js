@@ -3,6 +3,9 @@ import { NavLink } from "react-router-dom";
 import BakingMixes from "../BakingMixes/BakingMixes";
 import BreakFastMixes from "../BreakFastMixes/BreakFastMixes";
 import CrunchyCookies from "../CruncyCookies/CrunchyCookies";
+import Gifts from "../Gifts/Gifts";
+import Merch from "../Merch/Merch";
+import SnackPack from "../SnackPack/SnackPack";
 import SoftBaked from "../SoftBaked/SoftBaked";
 import Variety from "../Variety/Variety";
 import "./MainProducts.css";
@@ -84,13 +87,13 @@ const MainProducst = () => {
               <a href="#variety">Variety Packs</a>
             </li>
             <li>
-              <NavLink to="#">Snack Packs</NavLink>
+              <a href="#SnackPack">Snack Packs</a>
             </li>
             <li>
-              <NavLink to="#">Gifts</NavLink>
+              <a href="#gift">Gifts</a>
             </li>
             <li>
-              <NavLink to="#">Merch</NavLink>
+              <a href="#merch">Merch</a>
             </li>
           </ul>
         </div>
@@ -100,6 +103,9 @@ const MainProducst = () => {
           <BakingMixes />
           <BreakFastMixes />
           <Variety />
+          <SnackPack/>
+          <Gifts/>
+          <Merch/>
         </div>
       </div>
     </div>

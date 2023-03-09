@@ -9,6 +9,9 @@ import { SoftBakedContext } from "./components/Context/SoftBakedContext";
 import { BakingMixesContext } from "./components/Context/BakingMixesContext";
 import { BreakFastMixesContext } from "./components/Context/BreakfastMixesContext";
 import { VarietyContext } from "./components/Context/VarietyContext";
+import { SnackPacksContext } from "./components/Context/SnackPacksContext";
+import { GiftContext } from "./components/Context/GiftsContext";
+import { MerchContext } from "./components/Context/MerchContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -20,7 +23,13 @@ root.render(
             <BakingMixesContext>
               <BreakFastMixesContext>
                 <VarietyContext>
-                  <App />
+                  <SnackPacksContext>
+                    <GiftContext>
+                      <MerchContext>
+                        <App />
+                      </MerchContext>
+                    </GiftContext>
+                  </SnackPacksContext>
                 </VarietyContext>
               </BreakFastMixesContext>
             </BakingMixesContext>

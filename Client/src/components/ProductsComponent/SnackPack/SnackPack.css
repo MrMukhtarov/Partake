@@ -1,0 +1,149 @@
+.SnackPack {
+    padding: 1rem 1rem;
+    margin-top: 50px;
+}
+
+
+.SnackPack .title {
+    font-weight: 700;
+    font-size: 36px;
+    color: #005099;
+    line-height: 52px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+.SnackPack-all{
+    display: flex;
+    row-gap: 90px;
+    margin-bottom: 30px;
+}
+
+.SnackPack .boxLink {
+    text-decoration: none;
+}
+.SnackPack .SnackPack-bottom a {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: #005099;
+    transition: .3s;
+    text-decoration: none;
+}
+.SnackPack .SnackPack-box:hover .SnackPack-bottom a {
+    color: #91dfb9;
+    transition: .3s;
+}
+
+.SnackPack .SnackPack-box:hover .quick-add {
+    display: block;
+    transition: .10s;
+}
+
+.SnackPack .SnackPack-box {
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+    transition: .5s;
+    width: 33%;
+}
+
+.SnackPack .SnackPack-bottom {
+    margin-top: 20px;
+    height: 100px;
+}
+
+.SnackPack .SnackPack-bottom i {
+    color: #005099;
+    font-size: 20px;
+}
+
+.SnackPack .SnackPack-bottom .stars {
+    margin-top: 6px;
+}
+
+.SnackPack .stars span {
+    margin-left: 8px;
+    color: #005099;
+}
+
+.SnackPack .price {
+    margin-top: 7px;
+}
+
+.SnackPack .price span {
+    font-size: 18px;
+}
+
+.SnackPack .absolute {
+    background-color: #91DFB9;
+    border-radius: 50%;
+    position: absolute;
+    width: 86px;
+    height: 86px;
+    display: flex;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    left: 230px;
+    top: -50px;
+}
+
+.SnackPack .absolute span {
+    color: #005099;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.SnackPack .quick-add {
+    position: absolute;
+    top: 68%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #005099;
+    width: 80%;
+    background-color: white;
+    padding: 15px;
+    display: none;
+}
+
+.SnackPack .quick-add:hover {
+    background-color: #91DFB9;
+    border: none;
+}
+
+.SnackPack .quick-add:hover a {
+    color: white;
+}
+
+.SnackPack img {
+    height: 420px;
+    width: 420px;
+    object-fit: cover;
+    background-color: #F5F5F5;
+    padding: 40px 0;
+    margin: 20px 0;
+    
+}
+
+.SnackPack .quick-add a {
+    color: #005099;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@media(max-width: 576px) {
+    .SnackPack {
+        padding: 2rem 20px;
+    }
+    .SnackPack .title {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+    .SnackPack .SnackPack-bottom a {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .SnackPack-box{
+        width: 100% !important;
+    }
+}
