@@ -5,6 +5,7 @@ import BreakFastMixes from "../BreakFastMixes/BreakFastMixes";
 import CrunchyCookies from "../CruncyCookies/CrunchyCookies";
 import Gifts from "../Gifts/Gifts";
 import Merch from "../Merch/Merch";
+import ProdImgBox from "../ProdImgBox/ProdImgBox";
 import SnackPack from "../SnackPack/SnackPack";
 import SoftBaked from "../SoftBaked/SoftBaked";
 import Variety from "../Variety/Variety";
@@ -103,11 +104,12 @@ const MainProducst = () => {
           <BakingMixes />
           <BreakFastMixes />
           <Variety />
-          <SnackPack/>
-          <Gifts/>
-          <Merch/>
+          <SnackPack />
+          <Gifts />
+          <Merch />
         </div>
       </div>
+      <ProdImgBox />
     </div>
   );
 };

@@ -15,11 +15,15 @@ const AboutSafe = () => {
     <div className="aboutSafe">
       <div className="all">
         <div className="top col-lg-12 text-center">
-          <h2>The Partake Promise</h2>
+          <h2>
+            {window.location.pathname !== "/products"
+              ? "The Partake Promise"
+              : "Safe to Share"}
+          </h2>
           <p>
-            Our products give delicious peace of mind to those with dietary
-            restrictions... and "How is this so good?" enjoyment to everyone
-            else.
+            {window.location.pathname !== "/products"
+              ? ' Our products give delicious peace of mind to those with dietary restrictions... and "How is this so good?" enjoyment to everyone else.'
+              : "All Partake products are free of the top 9 allergens."}
           </p>
         </div>
         <div className="bottom d-flex text-center">
@@ -49,7 +53,9 @@ const AboutSafe = () => {
           </div>
           <div className="box">
             <GiWaterDrop title="Group 3-6 1" />
-            <p>Artificial <br /> Flavors</p>
+            <p>
+              Artificial <br /> Flavors
+            </p>
           </div>
           <div className="box">
             <AiFillGoogleCircle title="Group 3-7 1" />
@@ -57,7 +63,9 @@ const AboutSafe = () => {
           </div>
           <div className="box">
             <SlChemistry title="Group 3-8 1" />
-            <p>Artificial <br /> Preservatives</p>
+            <p>
+              Artificial <br /> Preservatives
+            </p>
           </div>
         </div>
       </div>

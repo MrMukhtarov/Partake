@@ -1,0 +1,48 @@
+.ProdImgBox{
+    padding: 3rem 2rem;
+
+}
+.ProdImgBox-h3 h3{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #005099;
+}
+.ProdImgBox-h3{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100%;
+    padding: 5px 1rem;
+}
+
+.ProdImgBox-box{
+    position: relative;
+}
+.ProdImgBox-all{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media(max-width: 576px){
+    .ProdImgBox{
+        padding: 10px;
+        padding-bottom: 5px;
+    }
+    .ProdImgBox-all{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    .ProdImgBox-h3 h3{
+        font-size: 23px;
+        line-height: 29px;
+    }
+    .ProdImgBox-h3{
+        padding: 20px 30px;
+        top: 0;
+        left: 10px;
+    }
+
+
+}
