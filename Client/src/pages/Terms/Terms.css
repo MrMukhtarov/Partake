@@ -1,0 +1,31 @@
+.Terms{
+    padding: 2rem 19rem;
+}
+.Terms-header{
+    background-image: url('https://cdn.shopify.com/s/files/1/0012/2296/7353/files/11-layers.svg?v=1639121522');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    text-align: center;
+}
+.Terms-header h1{
+    font-weight: 700;
+    font-size: 70px;
+    line-height: normal;
+    color: #005099;
+}
+.Terms-body{
+    padding: 2rem 0;
+    margin-top: 30px;
+}
+.Terms-body span{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    color: #005099;
+    letter-spacing: normal;
+    opacity: 0.9;
+}
+.Terms-body a{
+    color: #005099
+}

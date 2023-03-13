@@ -18,7 +18,7 @@ const Footer = () => {
             </div>
             <div className="Leftsright col-lg-5 gap-1">
               <NavLink to='/press'>PRESS</NavLink>
-              <NavLink to="">TERMS</NavLink>
+              <NavLink to="/terms">TERMS</NavLink>
               <NavLink to="">PRIVACY</NavLink>
               <NavLink to="">SHIPPING & RETURNS</NavLink>
             </div>

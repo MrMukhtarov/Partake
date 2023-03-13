@@ -39,22 +39,22 @@
     color: #0f5099;
 }
 
-.basketHeader .blocker{
+.basketHeader .blocker {
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
-    right: 500px;
+    right: 450px;
     content: ' ';
-    background: rgba(0,0,0,.5);
-  }
+    background: rgba(0, 0, 0, .5);
+}
 
-  .stop-scrolling {
+.stop-scrolling {
     height: 100%;
     overflow: hidden;
 }
 
-@media(max-width: 576px){
+@media(max-width: 576px) {
     .basketHeader {
         width: 83% !important;
         background: white;
@@ -65,7 +65,8 @@
         padding: 10px 0;
         display: none;
     }
-    .basketHeader .blocker{
+
+    .basketHeader .blocker {
         position: fixed;
         top: 0;
         left: 0;

@@ -231,9 +231,9 @@ const Header = () => {
             window.location.pathname === "/products"
               ? "url(https://cdn.shopify.com/s/files/1/0012/2296/7353/files/MA_Partake_5-layers_1.5x.png?v=1640863314)"
               : "",
-              backgroundPosition: 'center',
-              backgroundSize: 'contain',
-              backgroundRepeat : 'no-repeat'
+          backgroundPosition: "center",
+          backgroundSize: "contain",
+          backgroundRepeat: "no-repeat",
         }}
       ></div>
 
@@ -342,6 +342,7 @@ const Header = () => {
               }}
               className="fa-solid fa-user headera"
             ></i>
+            {/* bakset icon */}
             <i
               style={{
                 color: location.pathname === "/products" ? "white" : "",
@@ -350,6 +351,7 @@ const Header = () => {
               className="fa-solid fa-cart-shopping headera"
               title="basket"
             ></i>
+            {/* bakset icon */}
           </div>
 
           {/* Drop Down Products */}
