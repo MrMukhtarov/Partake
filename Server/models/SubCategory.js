@@ -7,6 +7,10 @@ const subCategorySchema = new mongoose.Schema(
       unique: true,
       required: true,
     },
+    category : {
+      type: [ObjectId],
+      ref: "Category",
+  },
   },
   { timestamps: true }
 );

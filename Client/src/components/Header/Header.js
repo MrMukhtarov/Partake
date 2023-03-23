@@ -365,7 +365,6 @@ const Header = () => {
               <div className="left col-lg-2">
                 <NavLink to={"/"}>Best Sellers</NavLink>
                 <NavLink to={"/"}>Snack Packs</NavLink>
-                <NavLink to={"/"}>Gifts</NavLink>
                 <NavLink to={"/"}>Loyality Program</NavLink>
                 <NavLink to={"/"}>Build Your Own</NavLink>
               </div>
