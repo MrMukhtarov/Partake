@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 
+
 const subCategorySchema = new mongoose.Schema(
   {
     name: {
@@ -7,10 +8,6 @@ const subCategorySchema = new mongoose.Schema(
       unique: true,
       required: true,
     },
-    category : {
-      type: [ObjectId],
-      ref: "Category",
-  },
   },
   { timestamps: true }
 );

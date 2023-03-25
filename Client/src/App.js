@@ -4,6 +4,7 @@ import About from "./pages/About";
 import Home from "./pages/Home";
 import Ingredients from "./pages/Ingredients";
 import Press from "./pages/Press";
+import ProdSubCategory from "./pages/ProdSubCategory/ProdSubCategory";
 import Products from "./pages/Products";
 import Terms from "./pages/Terms/Terms";
 
@@ -19,6 +20,7 @@ function App() {
             <Route path="/ingredients" element={<Ingredients />} />
             <Route path="/products" element={<Products />} />
             <Route path="/terms" element={<Terms />} />
+            <Route path="/products/:id" element={<ProdSubCategory />} />
           </Route>
         </Routes>
       </BrowserRouter>

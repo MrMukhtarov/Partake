@@ -1,14 +1,20 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink} from "react-router-dom";
 import BurgerMenu from "../BurgerMenu/BurgerMenu";
 import "./Header.css";
 import BasketHeader from "../BasketHeader/BasketHeader";
 import { useLogo } from "../Context/LogoContext";
 import { useLocation } from "react-router-dom";
+import { useCategory } from "../Context/CategoryContext";
 
 const Header = () => {
+  const {snack} = useCategory([])
   const location = useLocation();
   const { logo } = useLogo([]);
+
+  const snack_id = snack?.map(item => {
+    return item._id
+  })
 
   const about = () => {
     location.reload();
@@ -364,7 +370,7 @@ const Header = () => {
             <div className="d-flex">
               <div className="left col-lg-2">
                 <NavLink to={"/"}>Best Sellers</NavLink>
-                <NavLink to={"/"}>Snack Packs</NavLink>
+                <NavLink to={`/products/${snack_id}`}>Snack Packs</NavLink>
                 <NavLink to={"/"}>Loyality Program</NavLink>
                 <NavLink to={"/"}>Build Your Own</NavLink>
               </div>
