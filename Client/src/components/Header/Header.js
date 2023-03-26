@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink} from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import BurgerMenu from "../BurgerMenu/BurgerMenu";
 import "./Header.css";
 import BasketHeader from "../BasketHeader/BasketHeader";
@@ -8,13 +8,13 @@ import { useLocation } from "react-router-dom";
 import { useCategory } from "../Context/CategoryContext";
 
 const Header = () => {
-  const {snack} = useCategory([])
+  const { snack } = useCategory([]);
   const location = useLocation();
   const { logo } = useLogo([]);
 
-  const snack_id = snack?.map(item => {
-    return item._id
-  })
+  const snack_id = snack?.map((item) => {
+    return item._id;
+  });
 
   const about = () => {
     location.reload();
@@ -26,7 +26,7 @@ const Header = () => {
       document.querySelector("header").style.backgroundColor = "white";
       document.querySelector("header").style.transition = ".5s";
       document.querySelector(".logo").src = logo[0].img[1];
-    } else if (location.pathname === "/products") {
+    } else if (location.pathname.includes("/products")) {
       document.getElementById("prodDrop").style.display = "block";
       document.querySelector("header").style.backgroundColor = "white";
       document.querySelector("header").style.transition = ".5s";
@@ -51,7 +51,7 @@ const Header = () => {
       document.querySelector(".logo").src = logo[0].img[0];
       document.querySelector("header").style.backgroundColor = "#FABFA8";
       document.querySelector("header").style.transition = ".5s";
-    } else if (location.pathname === "/products") {
+    } else if (location.pathname.includes("/products")) {
       document.getElementById("prodDrop").style.display = "none";
       document.querySelector(".logo").src = logo[0].img[0];
       document.querySelector("header").style.backgroundColor = "white";
@@ -81,7 +81,7 @@ const Header = () => {
       document.querySelector("header").style.backgroundColor = "white";
       document.querySelector("header").style.transition = ".5s";
       document.querySelector(".logo").src = logo[0].img[1];
-    } else if (location.pathname === "/products") {
+    } else if (location.pathname.includes("/products")) {
       document.getElementById("ourStory").style.display = "block";
       document.getElementById("ourStory").style.opacity = "1";
       document.getElementById("ourStory").style.transition =
@@ -114,7 +114,7 @@ const Header = () => {
       document.querySelector(".logo").src = logo[0].img[0];
       document.querySelector("header").style.backgroundColor = "#FABFA8";
       document.querySelector("header").style.transition = ".5s";
-    } else if (location.pathname === "/products") {
+    } else if (location.pathname.includes("/products")) {
       document.getElementById("ourStory").style.display = "none";
       document.getElementById("ourStory").style.opacity = "0";
       document.getElementById("ourStory").style.transition =
@@ -147,7 +147,7 @@ const Header = () => {
       document.querySelector("header").style.backgroundColor = "white";
       document.querySelector("header").style.transition = ".5s";
       document.querySelector(".logo").src = logo[0].img[1];
-    } else if (location.pathname === "/products") {
+    } else if (location.pathname.includes("/products")) {
       document.getElementById("blogDropDown").style.display = "block";
       document.querySelector("header").style.backgroundColor = "white";
       document.querySelector("header").style.transition = ".5s";
@@ -171,7 +171,7 @@ const Header = () => {
       document.querySelector(".logo").src = logo[0].img[0];
       document.querySelector("header").style.backgroundColor = "#FABFA8";
       document.querySelector("header").style.transition = ".5s";
-    } else if (location.pathname === "/products") {
+    } else if (location.pathname.includes("/products")) {
       document.getElementById("blogDropDown").style.display = "none";
       document.querySelector(".logo").src = logo[0].img[0];
       document.querySelector("header").style.backgroundColor = "white";
@@ -215,28 +215,27 @@ const Header = () => {
     document.getElementById("burgers").style.display = "block";
     document.body.classList.add("stop-scrolling");
   };
-
   return (
     <header
       id="header"
       style={{
         background: window.location.pathname !== "/" ? "white" : "#FABFA8",
-        backgroundImage:
-          location.pathname === "/products"
-            ? "url(https://cdn.shopify.com/s/files/1/0012/2296/7353/files/Untitled_design_-_2022-05-09T181037.683_1500x.png?v=1652134275)"
-            : "",
-        paddingBottom: location.pathname === "/products" ? "280px" : "",
-        backgroundSize: location.pathname === "/products" ? "100%" : "",
-        backgroundRepeat: location.pathname === "/products" ? "no-repeat" : "",
+        backgroundImage: location.pathname.includes("/products")
+          ? "url(https://cdn.shopify.com/s/files/1/0012/2296/7353/files/Untitled_design_-_2022-05-09T181037.683_1500x.png?v=1652134275)"
+          : "",
+        paddingBottom: location.pathname.includes("/products") ? "280px" : "",
+        backgroundSize: location.pathname.includes("/products") ? "100%" : "",
+        backgroundRepeat: location.pathname.includes("/products")
+          ? "no-repeat"
+          : "",
       }}
     >
       <div
-        className="hideindesktop"
+        className={`hideindesktop`}
         style={{
-          backgroundImage:
-            window.location.pathname === "/products"
-              ? "url(https://cdn.shopify.com/s/files/1/0012/2296/7353/files/MA_Partake_5-layers_1.5x.png?v=1640863314)"
-              : "",
+          backgroundImage: window.location.pathname.includes("/products")
+            ? "url(https://cdn.shopify.com/s/files/1/0012/2296/7353/files/MA_Partake_5-layers_1.5x.png?v=1640863314)"
+            : "",
           backgroundPosition: "center",
           backgroundSize: "contain",
           backgroundRepeat: "no-repeat",
@@ -248,7 +247,7 @@ const Header = () => {
           <div className="left col-lg-4 col-3">
             <NavLink
               style={{
-                color: location.pathname === "/products" ? "white" : "",
+                color: location.pathname.includes("/products") ? "white" : "",
               }}
               onClick={() => location.reload()}
               onMouseEnter={prodEnter}
@@ -261,7 +260,7 @@ const Header = () => {
             </NavLink>
             <NavLink
               style={{
-                color: location.pathname === "/products" ? "white" : "",
+                color: location.pathname.includes("/products") ? "white" : "",
               }}
               onMouseEnter={storyOpen}
               onMouseLeave={storyClose}
@@ -272,7 +271,7 @@ const Header = () => {
             </NavLink>
             <NavLink
               style={{
-                color: location.pathname === "/products" ? "white" : "",
+                color: location.pathname.includes("/products") ? "white" : "",
               }}
               className="tab headera"
               to={"/ingredients"}
@@ -283,7 +282,7 @@ const Header = () => {
             {/* media-mobile burger-menu icon */}
             <i
               style={{
-                color: location.pathname === "/products" ? "white" : "",
+                color: location.pathname.includes("/products") ? "white" : "",
               }}
               onClick={openBurger}
               className="fa-solid fa-bars burger headera"
@@ -291,7 +290,7 @@ const Header = () => {
             {/* media-mobile search icon */}
             <i
               style={{
-                color: location.pathname === "/products" ? "white" : "",
+                color: location.pathname.includes("/products") ? "white" : "",
               }}
               onClick={searchIcon}
               className="fa-solid fa-magnifying-glass ml-4 mediaSearch headera"
@@ -302,7 +301,7 @@ const Header = () => {
             logo.map((logos) => (
               <div key={logos._id} className="center col-lg-4 col-6">
                 {window.location.pathname === "/" ||
-                window.location.pathname === "/products" ? (
+                window.location.pathname.includes("/products") ? (
                   <NavLink to={"/"}>
                     <img className="logo" src={logos.img[0]} alt="logo" />
                   </NavLink>
@@ -316,7 +315,7 @@ const Header = () => {
           <div className="right col-lg-3 align-items-center col-3 me-0 pe-0">
             <NavLink
               style={{
-                color: location.pathname === "/products" ? "white" : "",
+                color: location.pathname.includes("/products") ? "white" : "",
               }}
               className="tab headera"
               to={"/"}
@@ -325,7 +324,7 @@ const Header = () => {
             </NavLink>
             <NavLink
               style={{
-                color: location.pathname === "/products" ? "white" : "",
+                color: location.pathname.includes("/products") ? "white" : "",
               }}
               onMouseEnter={blogOpen}
               onMouseLeave={blogClose}
@@ -336,7 +335,7 @@ const Header = () => {
             </NavLink>
             <i
               style={{
-                color: location.pathname === "/products" ? "white" : "",
+                color: location.pathname.includes("/products") ? "white" : "",
               }}
               onClick={searchIcon}
               className="fa-solid fa-magnifying-glass ml-4 searchNav headera"
@@ -344,14 +343,14 @@ const Header = () => {
             ></i>
             <i
               style={{
-                color: location.pathname === "/products" ? "white" : "",
+                color: location.pathname.includes("/products") ? "white" : "",
               }}
               className="fa-solid fa-user headera"
             ></i>
             {/* bakset icon */}
             <i
               style={{
-                color: location.pathname === "/products" ? "white" : "",
+                color: location.pathname.includes("/products") ? "white" : "",
               }}
               onClick={basketOpen}
               className="fa-solid fa-cart-shopping headera"
@@ -370,7 +369,14 @@ const Header = () => {
             <div className="d-flex">
               <div className="left col-lg-2">
                 <NavLink to={"/"}>Best Sellers</NavLink>
-                <NavLink to={`/products/${snack_id}`}>Snack Packs</NavLink>
+                <NavLink
+                  onClick={() => location.reload()}
+                  onMouseEnter={prodEnter}
+                  onMouseLeave={prodLevae}
+                  to={`/products/${snack_id}`}
+                >
+                  Snack Packs
+                </NavLink>
                 <NavLink to={"/"}>Loyality Program</NavLink>
                 <NavLink to={"/"}>Build Your Own</NavLink>
               </div>

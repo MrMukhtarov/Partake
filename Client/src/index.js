@@ -13,6 +13,7 @@ import { SnackPacksContext } from "./components/Context/SnackPacksContext";
 import { GiftContext } from "./components/Context/GiftsContext";
 import { MerchContext } from "./components/Context/MerchContext";
 import { CategoryContext } from "./components/Context/CategoryContext";
+import { SubCategoryContext } from "./components/Context/SubCategoryContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -28,7 +29,9 @@ root.render(
                     <GiftContext>
                       <MerchContext>
                         <CategoryContext>
-                          <App />
+                          <SubCategoryContext>
+                            <App />
+                          </SubCategoryContext>
                         </CategoryContext>
                       </MerchContext>
                     </GiftContext>
