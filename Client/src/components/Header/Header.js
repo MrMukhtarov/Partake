@@ -8,11 +8,26 @@ import { useLocation } from "react-router-dom";
 import { useCategory } from "../Context/CategoryContext";
 
 const Header = () => {
-  const { snack } = useCategory([]);
+  const { snack, cookie, variety, baking, breakfast, best } = useCategory();
   const location = useLocation();
   const { logo } = useLogo([]);
 
   const snack_id = snack?.map((item) => {
+    return item._id;
+  });
+  const variety_id = variety?.map((item) => {
+    return item._id;
+  });
+  const cookie_id = cookie?.map((item) => {
+    return item._id;
+  });
+  const baking_id = baking?.map((item) => {
+    return item._id;
+  });
+  const breakfast_id = breakfast?.map((item) => {
+    return item._id;
+  });
+  const best_id = best?.map((item) => {
     return item._id;
   });
 
@@ -368,11 +383,14 @@ const Header = () => {
           >
             <div className="d-flex">
               <div className="left col-lg-2">
-                <NavLink to={"/"}>Best Sellers</NavLink>
                 <NavLink
                   onClick={() => location.reload()}
-                  onMouseEnter={prodEnter}
-                  onMouseLeave={prodLevae}
+                  to={`/products/${best_id}`}
+                >
+                  Best Sellers
+                </NavLink>
+                <NavLink
+                  onClick={() => location.reload()}
                   to={`/products/${snack_id}`}
                 >
                   Snack Packs
@@ -382,45 +400,69 @@ const Header = () => {
               </div>
               <div className="right col-lg-10">
                 <div className="box col-lg-3 text-center">
-                  <NavLink to={"/"}>
+                  <NavLink
+                    to={`/products/${variety_id}`}
+                    onClick={() => location.reload()}
+                  >
                     <img
                       className="img-fluid mb-2"
                       src="https://cdn.shopify.com/s/files/1/0012/2296/7353/files/menu-1.png?v=1640771968"
                       alt="img"
                     />
                   </NavLink>
-                  <NavLink className="boxLink" to={"/"}>
+                  <NavLink
+                    onClick={() => location.reload()}
+                    className="boxLink"
+                    to={`/products/${variety_id}`}
+                  >
                     <br /> VARIETY PACKS
                   </NavLink>
                 </div>
                 <div className="box col-lg-3 text-center">
-                  <NavLink to={"/"}>
+                  <NavLink
+                    to={`/products/${cookie_id}`}
+                    onClick={() => location.reload()}
+                  >
                     <img
                       className="img-fluid mb-2"
                       src="https://cdn.shopify.com/s/files/1/0012/2296/7353/files/menu-2.png?v=1640771968"
                       alt="img"
                     />
                   </NavLink>
-                  <NavLink className="boxLink" to={"/"}>
+                  <NavLink
+                    className="boxLink"
+                    to={`/products/${cookie_id}`}
+                    onClick={() => location.reload()}
+                  >
                     <br />
                     COOKIES
                   </NavLink>
                 </div>
                 <div className="box col-lg-3 text-center">
-                  <NavLink to={"/"}>
+                  <NavLink
+                    to={`/products/${baking_id}`}
+                    onClick={() => location.reload()}
+                  >
                     <img
                       className="img-fluid mb-2"
                       src="https://cdn.shopify.com/s/files/1/0012/2296/7353/files/Baking_Mixes_Main_Menu_771a0291-8df9-4274-a0d8-5d23b709c8e1.png?v=1642497529"
                       alt="img"
                     />
                   </NavLink>
-                  <NavLink className="boxLink" to={"/"}>
+                  <NavLink
+                    className="boxLink"
+                    to={`/products/${baking_id}`}
+                    onClick={() => location.reload()}
+                  >
                     <br />
                     BAKING MIXES
                   </NavLink>
                 </div>
                 <div className="box col-lg-3 text-center">
-                  <NavLink to={"/"}>
+                  <NavLink
+                    to={`/products/${breakfast_id}`}
+                    onClick={() => location.reload()}
+                  >
                     <img
                       className="img-fluid mb-2"
                       src="https://cdn.shopify.com/s/files/1/0012/2296/7353/files/Breakfast_Mixes_Main_Menu_ceee14d2-324b-4824-ab8e-07945334bfef.png?v=1642497596"
@@ -428,7 +470,11 @@ const Header = () => {
                     />
                   </NavLink>
                   <br />
-                  <NavLink className="boxLink" to={"/"}>
+                  <NavLink
+                    className="boxLink"
+                    to={`/products/${breakfast_id}`}
+                    onClick={() => location.reload()}
+                  >
                     BREAKFAST MIXES
                   </NavLink>
                 </div>

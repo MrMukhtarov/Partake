@@ -9,6 +9,11 @@ const CategoryContexts = createContext();
 export const CategoryContext = ({ children }) => {
   const [category, setCategory] = useState([]);
   const [snack, setSnack] = useState([]);
+  const [variety, setVariety] = useState();
+  const [cookie, setCookie] = useState();
+  const [baking, setBaking] = useState();
+  const [breakfast, setBreakFast] = useState();
+  const [best, setBest] = useState();
 
   useEffect(() => {
     axios
@@ -17,21 +22,93 @@ export const CategoryContext = ({ children }) => {
       .catch((err) => console.log(err));
   }, []);
 
+  //snack
   useEffect(() => {
     axios
       .get("http://localhost:3001/category")
-      .then((res) => 
-      setSnack(
-        res.data.category.filter(a => a._id === '6409b0366fa11033b6f198be')
+      .then((res) =>
+        setSnack(
+          res.data.category.filter((a) => a._id === "6409b0366fa11033b6f198be")
         )
-        )
+      )
       .catch((err) => console.log(err));
   }, []);
+  //snack
+
+  //vatiety packs
+  useEffect(() => {
+    axios
+      .get("http://localhost:3001/category")
+      .then((res) =>
+        setVariety(
+          res.data.category.filter((a) => a._id === "640601c2dfe74d519c496be6")
+        )
+      )
+      .catch((err) => console.log(err));
+  }, []);
+  //vatiety packs
+
+  //cookie
+  useEffect(() => {
+    axios
+      .get("http://localhost:3001/category")
+      .then((res) =>
+        setCookie(
+          res.data.category.filter((a) => a._id === "6422f5a89a86689b900c26af")
+        )
+      )
+      .catch((err) => console.log(err));
+  }, []);
+  //cookie
+
+  //baking
+  useEffect(() => {
+    axios
+      .get("http://localhost:3001/category")
+      .then((res) =>
+        setBaking(
+          res.data.category.filter((a) => a._id === "6405cc6bdfe74d519c496be4")
+        )
+      )
+      .catch((err) => console.log(err));
+  }, []);
+  //baking
+
+  //breakfast
+  useEffect(() => {
+    axios
+      .get("http://localhost:3001/category")
+      .then((res) =>
+        setBreakFast(
+          res.data.category.filter((a) => a._id === "6405f728dfe74d519c496be5")
+        )
+      )
+      .catch((err) => console.log(err));
+  }, []);
+  //breakfast
+
+  //best
+  useEffect(() => {
+    axios
+      .get("http://localhost:3001/category")
+      .then((res) =>
+        setBest(
+          res.data.category.filter((a) => a._id === "642315617ff6f3bfcf45df04")
+        )
+      )
+      .catch((err) => console.log(err));
+  }, []);
+  //best
 
   const values = {
     category,
     setCategory,
-    snack
+    snack,
+    variety,
+    cookie,
+    baking,
+    breakfast,
+    best,
   };
 
   return (
