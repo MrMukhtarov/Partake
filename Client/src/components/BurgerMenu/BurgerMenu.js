@@ -72,7 +72,7 @@ const BurgerMenu = () => {
     document.getElementById("burgers").style.display = "none";
     document.body.classList.remove("stop-scrolling");
   };
-
+  
   return (
     <div className="burgerMenu" id="burgers">
       <div className="burgerContainer">

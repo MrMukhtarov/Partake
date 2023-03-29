@@ -12,7 +12,7 @@ import { useVariety } from "../../components/Context/VarietyContext";
 import { useCookies } from "../../components/Context/CookiesContext";
 import { useBakingMixes } from "../../components/Context/BakingMixesContext";
 import { useBreakFastMixes } from "../../components/Context/BreakfastMixesContext";
-import { useBestSeller } from "../../components/Context/BestSellersContext";
+import { useBestSellerCategory } from "../../components/Context/BestSellerCategoryConetx";
 // id gelir categorylerde o idni tapib idsi o olan categorynin sublarinin namelerini yazdirmaq
 
 const ProdSubCategory = () => {
@@ -26,7 +26,7 @@ const ProdSubCategory = () => {
   const { cookies } = useCookies();
   const { bakingMixes } = useBakingMixes();
   const { breakfastMixes } = useBreakFastMixes();
-  const { bestSellerCategory } = useBestSeller();
+  const { bestSellerCategory } = useBestSellerCategory();
   let name = "";
   const prod = [];
 
@@ -69,15 +69,13 @@ const ProdSubCategory = () => {
   //variety
   //cookies
   for (let i = 0; i < cookies?.length; i++) {
-    if (
-      cookies[i].category[0] === id ||
-      cookies[i].category[1] === id ||
-      cookies[i].category[2] === id
-    ) {
-      prod.push(cookies[i]);
+    for (let z = 0; z < cookies[i].category?.length; z++) {
+      if (cookies[i].category[z] === id) {
+        prod.push(cookies[i]);
+      }
     }
   }
-  //cookie
+  // //cookie
   //baking
   for (let i = 0; i < bakingMixes?.length; i++) {
     if (bakingMixes[i].category[0] === id) {
@@ -94,15 +92,30 @@ const ProdSubCategory = () => {
   //breakfast
   //best
   for (let i = 0; i < bestSellerCategory?.length; i++) {
-    if (
-      bestSellerCategory[i].category === id
-    ) {
-      prod.push(bestSellerCategory[i]);
+    for (let z = 0; z < bestSellerCategory[i].category?.length; z++) {
+      if (bestSellerCategory[i].category[z] === id) {
+        prod.push(bestSellerCategory[i]);
+      }
     }
   }
   //best
 
-  
+  let unique = [];
+  function getUnique(arr, index) {
+    unique = arr
+      .map((e) => e[index])
+
+      // store the keys of the unique objects
+      .map((e, i, final) => final.indexOf(e) === i && i)
+
+      // eliminate the dead keys & store unique objects
+      .filter((e) => arr[e])
+      .map((e) => arr[e]);
+
+    return unique;
+  }
+
+  getUnique(prod, "_id")
 
   const MobileProducstMenu = () => {
     let menu = document.getElementById("prod-sub-category-mainUl");
@@ -150,8 +163,8 @@ const ProdSubCategory = () => {
           </div>
           <div className="prod-sub-category-right col-lg-10 mb-5">
             <div className="bakingMixes-all row">
-              {prod &&
-                prod.map((best) => (
+              {unique &&
+                unique.map((best) => (
                   <div key={best._id} className="prod-sub-category-box">
                     {best.status === "6403326e7694afa7307efdd8" && (
                       <div className="absolute">

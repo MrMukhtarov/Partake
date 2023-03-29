@@ -15,6 +15,7 @@ import { MerchContext } from "./components/Context/MerchContext";
 import { CategoryContext } from "./components/Context/CategoryContext";
 import { SubCategoryContext } from "./components/Context/SubCategoryContext";
 import { CookiesContext } from "./components/Context/CookiesContext";
+import { BestSellerCategoryContext } from "./components/Context/BestSellerCategoryConetx";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -32,7 +33,9 @@ root.render(
                         <CategoryContext>
                           <SubCategoryContext>
                             <CookiesContext>
-                              <App />
+                              <BestSellerCategoryContext>
+                                <App />
+                              </BestSellerCategoryContext>
                             </CookiesContext>
                           </SubCategoryContext>
                         </CategoryContext>

@@ -12,27 +12,15 @@ export const VarietyContext = ({ children }) => {
   useEffect(() => {
     axios
       .get("http://localhost:3001/products")
-      .then((res) =>{
-            // function Variety(){
-            //     let filter = res.data.products.filter(a => {return a})
-            //     for(let i = 0; i < filter.length; i++){
-            //        let a =(filter[i].category.filter(a => a === '640601c2dfe74d519c496be6'))
-            //        if(a.length > 0){
-            //        console.log(a);
-            //        }
-            //     }
-            // }
-            // Variety()
-         setVariety(
+      .then((res) => {
+        setVariety(
           res.data.products.filter(
             (a) =>
               a.category[0] === "640601c2dfe74d519c496be6" ||
               a.category[1] === "640601c2dfe74d519c496be6"
           )
-        )
-      }
-       
-      )
+        );
+      })
       .catch((err) => console.log(err));
   }, []);
 
