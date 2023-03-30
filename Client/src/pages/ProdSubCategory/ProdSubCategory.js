@@ -115,7 +115,7 @@ const ProdSubCategory = () => {
     return unique;
   }
 
-  getUnique(prod, "_id")
+  getUnique(prod, "_id");
 
   const MobileProducstMenu = () => {
     let menu = document.getElementById("prod-sub-category-mainUl");
@@ -134,6 +134,30 @@ const ProdSubCategory = () => {
       icons.style.transition = ".5s";
     }
   };
+
+  ////////PAGINATION////////////////
+  const [currentPage, setCurrentPage] = useState(1);
+  const recordsPerPage = 12;
+  const lastIndex = currentPage * recordsPerPage;
+  const firstIndex = lastIndex - recordsPerPage;
+  const records = unique.slice(firstIndex, lastIndex);
+  const nPage = Math.ceil(unique.length / recordsPerPage);
+  const numbers = [...Array(nPage + 1).keys()].slice(1);
+
+  function NextPage() {
+    if (currentPage !== nPage) {
+      setCurrentPage(currentPage + 1);
+    }
+  }
+  function PrePage() {
+    if (currentPage !== 1) {
+      setCurrentPage(currentPage - 1);
+    }
+  }
+  function changePage(id) {
+    setCurrentPage(id);
+  }
+  ////////PAGINATION////////////////
 
   return (
     <>
@@ -163,8 +187,8 @@ const ProdSubCategory = () => {
           </div>
           <div className="prod-sub-category-right col-lg-10 mb-5">
             <div className="bakingMixes-all row">
-              {unique &&
-                unique.map((best) => (
+              {records &&
+                records.map((best) => (
                   <div key={best._id} className="prod-sub-category-box">
                     {best.status === "6403326e7694afa7307efdd8" && (
                       <div className="absolute">
@@ -217,6 +241,30 @@ const ProdSubCategory = () => {
           </div>
         </div>
       </div>
+      <nav className={`prod-sub-category-pagination ${unique.length < 12 ?'none' : ''}`}>
+        <i
+          className={`fa-solid fa-caret-left me-3 ${
+            currentPage === 1 ? "none" : ""
+          }`}
+          onClick={PrePage}
+        ></i>
+        {numbers.map((n, i) => (
+          <span
+            onClick={() => changePage(n)}
+            className={`${
+              currentPage === n ? "prod-sub-category-pagination-active" : ""
+            }`}
+          >
+            {n}
+          </span>
+        ))}
+        <i
+          className={`fa-solid fa-caret-right ms-3 ${
+            currentPage === nPage ? "none" : ""
+          }`}
+          onClick={NextPage}
+        ></i>
+      </nav>
       <ProdImgBox />
       <AboutSafe />
     </>

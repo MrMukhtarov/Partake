@@ -36,7 +36,6 @@ const ProdImgBox = () => {
           <img
             src="https://cdn.shopify.com/s/files/1/0012/2296/7353/files/PLP_Free_Shipping_417x310_d85070f3-76cb-4a28-af7b-5d2794f5bc5e.png?v=1642090182"
             alt="ProdImgBox"
-            className="img-fluid"
           />
           <div className="ProdImgBox-h3">
             <h3>Free shipping on orders over $39.</h3>

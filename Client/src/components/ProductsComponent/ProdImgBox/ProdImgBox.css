@@ -11,9 +11,9 @@
 .ProdImgBox-h3{
     position: absolute;
     top: 20px;
-    left: 20px;
+    left: 10px;
     width: 100%;
-    padding: 5px 1rem;
+    padding: 5px 20px;
     padding-right: 40px;
 }
 
@@ -23,6 +23,9 @@
 .ProdImgBox-all{
     display: flex;
     justify-content: space-between;
+}
+.ProdImgBox img{
+    width: 100%;
 }
 
 @media(max-width: 576px){
