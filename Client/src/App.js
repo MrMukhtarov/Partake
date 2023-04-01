@@ -7,6 +7,7 @@ import Press from "./pages/Press";
 import ProdSubCategory from "./pages/ProdSubCategory/ProdSubCategory";
 import Products from "./pages/Products";
 import Terms from "./pages/Terms/Terms";
+import ProdDetails from "./pages/ProdDetails";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="/products" element={<Products />} />
             <Route path="/terms" element={<Terms />} />
             <Route path="/products/:id" element={<ProdSubCategory />} />
+            <Route path="/prod_detail" element={<ProdDetails />} />
           </Route>
         </Routes>
       </BrowserRouter>

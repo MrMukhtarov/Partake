@@ -241,7 +241,11 @@ const ProdSubCategory = () => {
           </div>
         </div>
       </div>
-      <nav className={`prod-sub-category-pagination ${unique.length < 12 ?'none' : ''}`}>
+      <nav
+        className={`prod-sub-category-pagination ${
+          unique.length < 12 ? "none" : ""
+        }`}
+      >
         <i
           className={`fa-solid fa-caret-left me-3 ${
             currentPage === 1 ? "none" : ""
@@ -250,6 +254,7 @@ const ProdSubCategory = () => {
         ></i>
         {numbers.map((n, i) => (
           <span
+            key={i}
             onClick={() => changePage(n)}
             className={`${
               currentPage === n ? "prod-sub-category-pagination-active" : ""

@@ -8,6 +8,7 @@ import { useBestSeller } from "../../Context/BestSellersContext";
 
 const BestSellers = () => {
   const { bestSeller } = useBestSeller();
+
   const options = {
     margin: 30,
     responsiveClass: true,

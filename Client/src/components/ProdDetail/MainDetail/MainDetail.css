@@ -1,0 +1,44 @@
+.MainDetail-left {
+    background-color: #BAE8FF;
+    padding: 20px 0;
+}
+
+.MainDetail-left-left-box-boxes img {
+    object-fit: cover;
+    border-radius: 50%;
+    transform: scale(3)
+}
+
+.MainDetail-left-left-box-boxes {
+    float: left;
+    width: 60px;
+    border-radius: 50%;
+    border: 3px solid white;
+    height: 60px;
+    display: block;
+    object-fit: contain;
+    overflow: hidden;
+    padding: 0;
+    cursor: pointer;
+}
+
+.MainDetail-left-left-box {
+    padding: 50px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: absolute;
+}
+
+.MainDetail-left-right {
+    display: flex;
+    justify-content: center;
+}
+
+.MainDetail-left-right img {
+    width: 600px;
+}
+
+.MainDetail-left-right {
+    padding-right: 35px;
+}
