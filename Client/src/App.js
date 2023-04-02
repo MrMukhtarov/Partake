@@ -22,7 +22,7 @@ function App() {
             <Route path="/products" element={<Products />} />
             <Route path="/terms" element={<Terms />} />
             <Route path="/products/:id" element={<ProdSubCategory />} />
-            <Route path="/prod_detail" element={<ProdDetails />} />
+            <Route path="/prod_detail/:id" element={<ProdDetails />} />
           </Route>
         </Routes>
       </BrowserRouter>

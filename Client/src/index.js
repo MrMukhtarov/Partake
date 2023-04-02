@@ -16,6 +16,7 @@ import { CategoryContext } from "./components/Context/CategoryContext";
 import { SubCategoryContext } from "./components/Context/SubCategoryContext";
 import { CookiesContext } from "./components/Context/CookiesContext";
 import { BestSellerCategoryContext } from "./components/Context/BestSellerCategoryConetx";
+import { ProductsContext } from "./components/Context/ProuctsContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -34,7 +35,9 @@ root.render(
                           <SubCategoryContext>
                             <CookiesContext>
                               <BestSellerCategoryContext>
-                                <App />
+                                <ProductsContext>
+                                  <App />
+                                </ProductsContext>
                               </BestSellerCategoryContext>
                             </CookiesContext>
                           </SubCategoryContext>

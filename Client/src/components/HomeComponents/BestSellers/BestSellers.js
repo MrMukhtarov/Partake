@@ -90,7 +90,7 @@ const BestSellers = () => {
                 <span>BEST</span>
                 <span>SELLER</span>
               </div>
-              <NavLink className="boxLink" to="/">
+              <NavLink className="boxLink" to={`/prod_detail/${best._id}`} >
                 <div className="top">
                   <img className="img-fluid" src={best.img} alt={best.name} />
                   <div className="quick-add">
